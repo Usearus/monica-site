@@ -304,7 +304,7 @@ export default function Header() {
 			<div className='fixed bottom-6 right-6 md:hidden z-50'>
 				<a
 					href='https://monica-denais.clientsecure.me'
-					className='bg-bark hover:bg-olivewood text-white rounded-full w-14 h-14 flex items-center justify-center shadow-2xl transition-colors'
+					className='bg-bark hover:bg-olivewood text-white rounded-full w-16 h-16 flex items-center justify-center shadow-2xl transition-colors'
 					data-spwidget-scope-id='b83fa305-8232-49fb-be6b-314b9da4451a'
 					data-spwidget-scope-uri='monica-denais'
 					data-spwidget-application-id='7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b'
@@ -313,7 +313,7 @@ export default function Header() {
 					data-spwidget-autobind=''
 					onClick={(e) => e.preventDefault()}
 					aria-label='Book free consult'>
-					<ScheduleIcon className='w-6 h-6 text-white' />
+					<ScheduleIcon className='w-7 h-7 text-white' />
 				</a>
 				<Script
 					src='https://widget-cdn.simplepractice.com/assets/integration-1.0.js'
