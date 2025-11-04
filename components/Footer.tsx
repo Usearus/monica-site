@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { EnvelopeOpenIcon, PinTopIcon } from '@radix-ui/react-icons';
+import { EnvelopeOpenIcon } from '@radix-ui/react-icons';
+import LocationIcon from './LocationIcon';
 
 export default function Footer() {
 	return (
@@ -22,7 +23,7 @@ export default function Footer() {
 								</div>
 							</div>
 							<div className='flex items-start gap-3'>
-								<PinTopIcon className='w-5 h-5 text-beige mt-1 shrink-0' />
+								<LocationIcon className='w-5 h-5 text-beige mt-1 shrink-0' />
 								<div>
 									<p className='font-medium mb-1'>Location</p>
 									<p>Telehealth services in Texas (Pending Florida)</p>

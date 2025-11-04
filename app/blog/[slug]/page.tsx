@@ -115,7 +115,7 @@ export default async function BlogPost({
 
 	return (
 		<>
-			<div className='bg-white px-4 py-8 lg:py-24'>
+			<div className='bg-beige px-4 py-8 lg:py-24'>
 				<div className='max-w-4xl mx-auto'>
 					<Link
 						href='/blog'

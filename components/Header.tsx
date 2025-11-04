@@ -4,12 +4,12 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import {
-	Crosshair2Icon,
 	HamburgerMenuIcon,
 	Cross2Icon,
 } from '@radix-ui/react-icons';
 import Button from '@/components/Button';
 import SimplePracticeWidget from './SimplePracticeWidget';
+import LocationIcon from './LocationIcon';
 
 export default function Header() {
 	const pathname = usePathname();
@@ -56,7 +56,7 @@ export default function Header() {
 						In-Person & Virtual Counselling & Psychotherapy Services Available
 					</div>
 					<div className='flex items-center gap-1 shrink-0'>
-						<Crosshair2Icon className='w-4 h-4' />
+						<LocationIcon className='w-4 h-4' />
 						<span>Plano, TX</span>
 					</div>
 				</div>
@@ -185,12 +185,13 @@ export default function Header() {
 						Book free consult
 					</Button> */}
 
-					{/* <SimplePracticeWidget
-									buttonText='Book free consult'
-									widgetType='OAR'
-									variant='primary-outline'
-									className='hidden md:inline-block'
-								/> */}
+					<div className='hidden md:block'>
+						<SimplePracticeWidget
+							buttonText='Book free consult'
+							widgetType='OAR'
+							variant='primary-outline'
+						/>
+					</div>
 				</div>
 			</nav>
 

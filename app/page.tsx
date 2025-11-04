@@ -115,7 +115,7 @@ export default function Home() {
 			{/* What We Specialize In Section */}
 			<section
 				id='services'
-				className='bg-beige px-4 py-8 lg:py-24 scroll-mt-20'>
+				className='bg-beige px-4 py-8 lg:py-24 scroll-mt-32 md:scroll-mt-20'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='grid md:grid-cols-2 gap-12 items-center'>
 						{/* Left side - content */}

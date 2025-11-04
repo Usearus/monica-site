@@ -36,12 +36,12 @@ export default function Blog() {
 
   return (
     <>
-      <div className="bg-white px-4 py-8 lg:py-24">
+      <div className="bg-beige px-4 py-8 lg:py-24">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-serif text-primary mb-12">Blog</h1>
-          <div className="space-y-8">
+          <div>
             {posts.map((post, index) => (
-              <Link key={index} href={`/blog/${post.slug}`}>
+              <Link key={index} href={`/blog/${post.slug}`} className="block mb-4 last:mb-0">
                 <article className="bg-white p-8 rounded-lg shadow-sm border border-olivewood/10 hover:shadow-md transition-shadow cursor-pointer">
                   <p className="text-sm text-sage mb-2">{post.date}</p>
                   <h2 className="text-3xl font-serif text-primary mb-4">{post.title}</h2>
