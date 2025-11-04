@@ -304,7 +304,10 @@ export default function Header() {
 			<div className='fixed bottom-6 right-6 md:hidden z-50'>
 				<a
 					href='https://monica-denais.clientsecure.me'
-					className='bg-bark hover:bg-olivewood text-white rounded-full w-16 h-16 flex items-center justify-center shadow-2xl transition-colors'
+					className='bg-bark hover:bg-olivewood text-white rounded-full w-16 h-16 flex items-center justify-center transition-colors'
+					style={{
+						boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2)',
+					}}
 					data-spwidget-scope-id='b83fa305-8232-49fb-be6b-314b9da4451a'
 					data-spwidget-scope-uri='monica-denais'
 					data-spwidget-application-id='7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b'
