@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Script from 'next/script';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {
 	HamburgerMenuIcon,
 	Cross2Icon,
@@ -17,6 +17,7 @@ export default function Header() {
 	const pathname = usePathname();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isServicesHovered, setIsServicesHovered] = useState(false);
+	const fabRef = useRef<HTMLAnchorElement>(null);
 
 	const navItems = [
 		{ name: 'Home', href: '/' },
@@ -48,6 +49,20 @@ export default function Header() {
 		pathname === '/services' ||
 		pathname === '/services/burnout-perfectionism' ||
 		pathname === '/services/ocd-intrusive-thoughts';
+
+	// Re-initialize SimplePractice widget after menu closes
+	useEffect(() => {
+		if (!isMenuOpen && fabRef.current) {
+			// Small delay to ensure DOM is settled
+			setTimeout(() => {
+				// Try to re-bind the widget if SimplePractice is available
+				const widget = (window as any).SimplePractice?.Widget;
+				if (widget && typeof widget.bind === 'function' && fabRef.current) {
+					widget.bind(fabRef.current);
+				}
+			}, 100);
+		}
+	}, [isMenuOpen]);
 
 	return (
 		<header className='sticky top-0 z-50 w-full bg-white shadow-sm'>
@@ -303,6 +318,7 @@ export default function Header() {
 			{/* Mobile FAB - Book free consult */}
 			<div className='fixed bottom-6 right-6 md:hidden z-50'>
 				<a
+					ref={fabRef}
 					href='https://monica-denais.clientsecure.me'
 					className='bg-bark hover:bg-olivewood text-white rounded-full w-16 h-16 flex items-center justify-center transition-colors'
 					style={{
@@ -314,7 +330,22 @@ export default function Header() {
 					data-spwidget-type='OAR'
 					data-spwidget-scope-global=''
 					data-spwidget-autobind=''
-					onClick={(e) => e.preventDefault()}
+					onClick={(e) => {
+						e.preventDefault();
+						// Try to trigger SimplePractice widget if available
+						const widget = (window as any).SimplePractice?.Widget;
+						if (widget && typeof widget.open === 'function') {
+							widget.open({
+								scopeId: 'b83fa305-8232-49fb-be6b-314b9da4451a',
+								scopeUri: 'monica-denais',
+								applicationId: '7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b',
+								type: 'OAR',
+							});
+						} else {
+							// Fallback: allow default navigation if script not ready
+							window.location.href = 'https://monica-denais.clientsecure.me';
+						}
+					}}
 					aria-label='Book free consult'>
 					<ScheduleIcon className='w-7 h-7 text-white' />
 				</a>
