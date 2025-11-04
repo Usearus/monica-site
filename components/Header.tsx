@@ -9,15 +9,16 @@ import {
 	Cross2Icon,
 } from '@radix-ui/react-icons';
 import Button from '@/components/Button';
+import SimplePracticeWidget from './SimplePracticeWidget';
 
 export default function Header() {
 	const pathname = usePathname();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [isServicesHovered, setIsServicesHovered] = useState(false);
 
 	const navItems = [
 		{ name: 'Home', href: '/' },
 		{ name: 'About', href: '/about' },
-		{ name: 'Services', href: '/services' },
 		{ name: 'FAQs', href: '/faqs' },
 		{ name: 'Blog', href: '/blog' },
 		{
@@ -27,7 +28,24 @@ export default function Header() {
 		},
 	];
 
+	const servicesItems = [
+		{ name: 'Anxiety & overthinking', href: '/services' },
+		{
+			name: 'Burnout & perfectionism',
+			href: '/services/burnout-perfectionism',
+		},
+		{
+			name: 'OCD & Intrusive thoughts',
+			href: '/services/ocd-intrusive-thoughts',
+		},
+	];
+
 	const closeMenu = () => setIsMenuOpen(false);
+
+	const isServicesActive =
+		pathname === '/services' ||
+		pathname === '/services/burnout-perfectionism' ||
+		pathname === '/services/ocd-intrusive-thoughts';
 
 	return (
 		<header className='sticky top-0 z-50 w-full bg-white shadow-sm'>
@@ -67,27 +85,89 @@ export default function Header() {
 
 					{/* Desktop navigation */}
 					<ul className='hidden md:flex flex-wrap items-center gap-6 text-sm font-medium text-primary'>
-						{navItems.map((item) => (
-							<li key={item.href}>
+						{/* Home */}
+						{navItems.slice(0, 1).map((item) => (
+							<li key={item.href} className='flex items-center'>
 								{item.external ? (
 									<a
 										href={item.href}
 										target='_blank'
 										rel='noopener noreferrer'
-										className={`transition-colors hover:text-sage ${
+										className={`inline-block transition-colors hover:text-sage border-b-2 pb-1 ${
 											pathname === item.href
-												? 'border-b-2 border-olivewood pb-1'
-												: ''
+												? 'border-olivewood'
+												: 'border-transparent'
 										}`}>
 										{item.name}
 									</a>
 								) : (
 									<Link
 										href={item.href}
-										className={`transition-colors hover:text-sage ${
+										className={`inline-block transition-colors hover:text-sage border-b-2 pb-1 ${
 											pathname === item.href
-												? 'border-b-2 border-olivewood pb-1'
-												: ''
+												? 'border-olivewood'
+												: 'border-transparent'
+										}`}>
+										{item.name}
+									</Link>
+								)}
+							</li>
+						))}
+						{/* Services Dropdown */}
+						<li className='relative flex items-center'>
+							<div
+								className='relative'
+								onMouseEnter={() => setIsServicesHovered(true)}
+								onMouseLeave={() => setIsServicesHovered(false)}>
+								<button
+									className={`inline-block transition-colors hover:text-sage border-b-2 pb-1 ${
+										isServicesActive ? 'border-olivewood' : 'border-transparent'
+									}`}>
+									Services
+								</button>
+								{isServicesHovered && (
+									<div className='absolute top-full left-0 pt-2 w-64 z-50'>
+										<ul className='bg-white shadow-lg border border-bark/20 rounded-md py-2'>
+											{servicesItems.map((item) => (
+												<li key={item.href}>
+													<Link
+														href={item.href}
+														className={`block px-4 py-2 text-sm transition-colors hover:bg-sage/10 ${
+															pathname === item.href
+																? 'bg-sage/10 text-primary font-medium'
+																: 'text-primary'
+														}`}>
+														{item.name}
+													</Link>
+												</li>
+											))}
+										</ul>
+									</div>
+								)}
+							</div>
+						</li>
+						{/* Rest of nav items (About, FAQs, Blog, Contact) */}
+						{navItems.slice(1).map((item) => (
+							<li key={item.href} className='flex items-center'>
+								{item.external ? (
+									<a
+										href={item.href}
+										target='_blank'
+										rel='noopener noreferrer'
+										className={`inline-block transition-colors hover:text-sage border-b-2 pb-1 ${
+											pathname === item.href
+												? 'border-olivewood'
+												: 'border-transparent'
+										}`}>
+										{item.name}
+									</a>
+								) : (
+									<Link
+										href={item.href}
+										className={`inline-block transition-colors hover:text-sage border-b-2 pb-1 ${
+											pathname === item.href
+												? 'border-olivewood'
+												: 'border-transparent'
 										}`}>
 										{item.name}
 									</Link>
@@ -96,14 +176,21 @@ export default function Header() {
 						))}
 					</ul>
 
-					<Button
+					{/* <Button
 						href='https://monica-denais.clientsecure.me/contact-widget'
 						target='_blank'
 						rel='noopener noreferrer'
 						variant='primary-outline'
 						className='hidden md:inline-block'>
 						Book free consult
-					</Button>
+					</Button> */}
+
+					{/* <SimplePracticeWidget
+									buttonText='Book free consult'
+									widgetType='OAR'
+									variant='primary-outline'
+									className='hidden md:inline-block'
+								/> */}
 				</div>
 			</nav>
 
@@ -123,7 +210,8 @@ export default function Header() {
 					}`}>
 					<div className='p-6 pt-20'>
 						<ul className='space-y-6'>
-							{navItems.map((item) => (
+							{/* Home */}
+							{navItems.slice(0, 1).map((item) => (
 								<li key={item.href}>
 									{item.external ? (
 										<a
@@ -152,21 +240,71 @@ export default function Header() {
 									)}
 								</li>
 							))}
-							<li className='pt-4'>
-								<Button
-									href='https://monica-denais.clientsecure.me/contact-widget'
-									target='_blank'
-									rel='noopener noreferrer'
-									variant='primary-outline'
-									className='w-full text-center'
-									onClick={closeMenu}>
-									Book free consult
-								</Button>
+							{/* Services Dropdown - Mobile */}
+							<li>
+								<div className='text-xl font-medium text-primary pl-2 mb-2'>
+									Services
+								</div>
+								<ul className='ml-4 space-y-3'>
+									{servicesItems.map((item) => (
+										<li key={item.href}>
+											<Link
+												href={item.href}
+												onClick={closeMenu}
+												className={`block text-lg text-primary transition-colors hover:text-sage ${
+													pathname === item.href
+														? 'border-l-4 border-olivewood pl-2 font-medium'
+														: 'pl-2'
+												}`}>
+												{item.name}
+											</Link>
+										</li>
+									))}
+								</ul>
 							</li>
+							{/* Rest of nav items (About, FAQs, Blog, Contact) */}
+							{navItems.slice(1).map((item) => (
+								<li key={item.href}>
+									{item.external ? (
+										<a
+											href={item.href}
+											target='_blank'
+											rel='noopener noreferrer'
+											onClick={closeMenu}
+											className={`block text-xl font-medium text-primary transition-colors hover:text-sage ${
+												pathname === item.href
+													? 'border-l-4 border-olivewood pl-2'
+													: 'pl-2'
+											}`}>
+											{item.name}
+										</a>
+									) : (
+										<Link
+											href={item.href}
+											onClick={closeMenu}
+											className={`block text-xl font-medium text-primary transition-colors hover:text-sage ${
+												pathname === item.href
+													? 'border-l-4 border-olivewood pl-2'
+													: 'pl-2'
+											}`}>
+											{item.name}
+										</Link>
+									)}
+								</li>
+							))}
 						</ul>
 					</div>
 				</div>
 			</>
+
+			{/* Mobile FAB - Book free consult */}
+			<div className='fixed bottom-6 right-6 md:hidden z-50'>
+				<SimplePracticeWidget
+					buttonText='Book free consult'
+					widgetType='OAR'
+					variant='primary'
+				/>
+			</div>
 		</header>
 	);
 }

@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer';
 import Button from '@/components/Button';
+import SimplePracticeWidget from '@/components/SimplePracticeWidget';
 
 export const metadata = {
 	title: 'About | Monica Denais',
@@ -12,7 +13,7 @@ export default function About() {
 		<>
 			<div className='bg-beige px-4 py-8 lg:py-24'>
 				<div className='max-w-4xl mx-auto'>
-					<h1 className='text-5xl md:text-6xl font-serif text-secondary mb-6'>
+					<h1 className='text-5xl md:text-6xl font-serif text-primary mb-6'>
 						About Monica Denais
 					</h1>
 					<div className='space-y-6 text-lg text-secondary leading-relaxed'>
@@ -31,7 +32,7 @@ export default function About() {
 							know how exhausting it feels to constantly achieve, yet never feel
 							satisfied or "enough."
 						</p>
-						<h2 className='text-3xl font-serif text-secondary mt-12 mb-4'>
+						<h2 className='text-3xl font-serif text-primary mt-12 mb-4'>
 							Who I Work With
 						</h2>
 						<p>
@@ -53,7 +54,7 @@ export default function About() {
 							who juggle cultural expectations, perfectionism, and the pressure
 							to succeed often without a roadmap or support.
 						</p>
-						<h2 className='text-3xl font-serif text-secondary mt-12 mb-4'>
+						<h2 className='text-3xl font-serif text-primary mt-12 mb-4'>
 							How I Work
 						</h2>
 						<p>
@@ -71,7 +72,7 @@ export default function About() {
 							exchange memes or TikToks if it helps me understand your
 							experience better.
 						</p>
-						<h2 className='text-3xl font-serif text-secondary mt-12 mb-4'>
+						<h2 className='text-3xl font-serif text-primary mt-12 mb-4'>
 							Virtual Therapy
 						</h2>
 						<p>
@@ -80,7 +81,7 @@ export default function About() {
 							clothes on your couch. Therapy should fit your life, not make it
 							harder. I'm currently licensed in <strong>Texas.</strong>
 						</p>
-						<h2 className='text-3xl font-serif text-secondary mt-12 mb-4'>
+						<h2 className='text-3xl font-serif text-primary mt-12 mb-4'>
 							Why This Work Matters to Me
 						</h2>
 						<p>
@@ -94,7 +95,7 @@ export default function About() {
 						<p>
 							Success is only one part of a satisfying life not the whole story.
 						</p>
-						<h2 className='text-3xl font-serif text-secondary mt-12 mb-4'>
+						<h2 className='text-3xl font-serif text-primary mt-12 mb-4'>
 							Outside the Therapy Room
 						</h2>
 						<p>
@@ -128,14 +129,20 @@ export default function About() {
 						<p className='text-secondary mt-4'>
 							<strong>Click below to schedule a free 15-minute consult.</strong>
 						</p>
-						<Button
+						{/* <Button
 							href='https://monica-denais.clientsecure.me/contact-widget'
 							target='_blank'
 							rel='noopener noreferrer'
 							variant='secondary'
 							className='mt-4'>
 							Book a free consult
-						</Button>
+						</Button> */}
+						<SimplePracticeWidget
+									buttonText='Book a free consult'
+									widgetType='OAR'
+									variant='secondary'
+									className='mt-6'
+								/>
 					</div>
 				</div>
 			</section>

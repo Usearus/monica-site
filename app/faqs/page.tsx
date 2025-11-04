@@ -46,7 +46,7 @@ export default function FAQs() {
     <>
       <div className="bg-beige px-4 py-8 lg:py-24">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-serif text-secondary mb-12 text-center">Frequently asked questions</h1>
+          <h1 className="text-5xl md:text-6xl font-serif text-primary mb-12">Frequently asked questions</h1>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white rounded-lg shadow-sm border border-bark/10 overflow-hidden transition-all duration-200">
@@ -54,7 +54,7 @@ export default function FAQs() {
                   onClick={() => toggleAccordion(index)}
                   className="w-full p-6 text-left flex items-center justify-between hover:bg-beige transition-colors"
                 >
-                  <h2 className="text-xl md:text-2xl font-serif text-secondary pr-8">{faq.question}</h2>
+                  <h2 className="text-xl md:text-2xl font-serif text-primary pr-8">{faq.question}</h2>
                   <ChevronDownIcon
                     className={`w-6 h-6 text-secondary shrink-0 transition-transform duration-200 ${
                       openIndex === index ? 'rotate-180' : ''
@@ -76,7 +76,7 @@ export default function FAQs() {
           
           {/* Good Faith Estimate Section */}
           <div className="mt-12 bg-white rounded-lg shadow-sm border border-bark/10 p-8">
-            <h2 className="text-3xl font-serif text-secondary mb-6">Good Faith Estimate (No Surprises Act)</h2>
+            <h2 className="text-3xl font-serif text-primary mb-6">Good Faith Estimate (No Surprises Act)</h2>
             <div className="space-y-4 text-lg text-secondary leading-relaxed">
               <p>
                 You have the right to receive a Good Faith Estimate explaining how much your mental health services will cost.

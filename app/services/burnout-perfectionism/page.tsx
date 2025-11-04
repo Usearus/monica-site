@@ -5,12 +5,12 @@ import Button from '@/components/Button';
 import SimplePracticeWidget from '@/components/SimplePracticeWidget';
 
 export const metadata = {
-	title: 'Services | Monica Denais',
+	title: 'Burnout & Perfectionism Therapy | Monica Denais',
 	description:
-		'Explore our comprehensive mental health counselling services including individual, family, children, and teen therapy.',
+		'Specialized therapy for burnout and perfectionism. Help for high-achieving women who are exhausted from trying to be perfect.',
 };
 
-export default function Services() {
+export default function BurnoutPerfectionism() {
 	return (
 		<>
 			{/* New Hero Section */}
@@ -18,28 +18,31 @@ export default function Services() {
 				<div className='max-w-4xl mx-auto'>
 					<div className='text-center mb-8'>
 						<h1 className='text-4xl md:text-5xl lg:text-6xl font-serif text-primary mb-6 leading-tight'>
-							Therapy for Anxiety & Overthinking
+							Therapy for Burnout & Perfectionism
 						</h1>
 						<p className='text-xl md:text-2xl text-secondary italic'>
-							For the women who can't turn their brain off.
+							For the women who can't stop pushing themselves.
 						</p>
 					</div>
 					<div className='space-y-6 text-lg text-secondary leading-relaxed'>
 						<p>
-							If your mind is always running, replaying conversations,
-							planning for the worst, or worrying about disappointing someone,
-							anxiety can feel like a full-time job.
+							If you're constantly setting impossibly high standards for
+							yourself, working until you're exhausted, and still feeling like
+							you're not doing enough, you might be experiencing burnout and
+							perfectionism.
 						</p>
 						<p className='font-medium'>And the hard part?</p>
 						<p>
-							Everyone sees you as capable, strong, dependable so it's easy to
-							hide how overwhelmed you really are.
+							You've been praised for your high standards and your ability to
+							get things done, so it's hard to recognize when those same
+							qualities are actually hurting you.
 						</p>
 						<p>
 							Many of my clients are ambitious women, eldest daughters, or
-							first-generation professionals who carry a lot of
-							responsibility. You may be the one holding things together for
-							everyone else, but quietly falling apart on the inside.
+							first-generation professionals who learned early on that their
+							worth was tied to their achievements. You may be the one who
+							excels at everything, but quietly struggling with the constant
+							pressure to maintain that standard.
 						</p>
 						<p className='font-medium text-primary text-xl'>
 							You don't have to push through it alone anymore.
@@ -48,30 +51,36 @@ export default function Services() {
 				</div>
 			</section>
 
-			{/* Therapy for Anxiety Section */}
+			{/* Therapy for Burnout & Perfectionism Section */}
 			<section className='bg-white px-4 py-16'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='max-w-4xl mx-auto'>
-						
 
 						<div className='mt-12 mb-8'>
 							<h3 className='text-3xl font-serif text-primary mb-6'>
-								What anxiety can look like
+								What burnout and perfectionism can look like
 							</h3>
 							<ul className='space-y-3 text-lg text-secondary leading-relaxed list-disc'>
-								<li>Constant overthinking and racing thoughts</li>
-								<li>Feeling tense, restless, or on edge</li>
+								<li>Feeling exhausted even after rest or time off</li>
+								<li>Setting goals so high that you can never really meet them</li>
 								<li>
-									Trouble relaxing or sleeping because your mind won't shut off
+									Procrastinating because you're afraid of not doing something
+									perfectly
 								</li>
-								<li>Second-guessing every decision</li>
-								<li>The fear of making a mistake or letting people down</li>
-								<li>Being "high-functioning" but emotionally exhausted</li>
-								<li>Feeling overwhelmed by family or cultural expectations</li>
+								<li>Feeling like nothing you do is ever "good enough"</li>
+								<li>Comparing yourself to others constantly</li>
+								<li>Struggling to delegate or ask for help</li>
+								<li>
+									Feeling guilty when you're not working or being productive
+								</li>
+								<li>
+									Losing interest in things that used to bring you joy
+								</li>
 							</ul>
 							<p className='mt-6 text-lg text-secondary leading-relaxed'>
-								If this sounds familiar, therapy can help you learn to respond
-								to anxiety instead of getting pulled into it.
+								If this sounds familiar, therapy can help you break free from the
+								cycle of perfectionism and find a healthier relationship with
+								achievement and rest.
 							</p>
 						</div>
 
@@ -82,8 +91,8 @@ export default function Services() {
 							<p className='text-lg text-secondary leading-relaxed mb-6'>
 								I integrate <strong>Cognitive Behavioral Therapy (CBT)</strong>,{' '}
 								<strong>Acceptance and Commitment Therapy (ACT)</strong>, and{' '}
-								<strong>Solution-Focused Therapy</strong> to give you both
-								insight and practical tools.
+								<strong>Solution-Focused Therapy</strong> to help you understand
+								where your perfectionism comes from and create new patterns.
 							</p>
 
 							<div className='space-y-6'>
@@ -92,9 +101,17 @@ export default function Services() {
 										With CBT, you'll learn:
 									</h4>
 									<ul className='space-y-2 text-lg text-secondary leading-relaxed list-disc'>
-										<li>How to challenge anxious thought patterns</li>
-										<li>Why your brain jumps to worst-case scenarios</li>
-										<li>Tools to calm your body and nervous system</li>
+										<li>
+											How to identify and challenge perfectionistic thought
+											patterns
+										</li>
+										<li>
+											The connection between your beliefs about achievement and
+											your self-worth
+										</li>
+										<li>
+											Tools to set realistic goals and celebrate progress
+										</li>
 									</ul>
 								</div>
 
@@ -104,12 +121,13 @@ export default function Services() {
 									</h4>
 									<ul className='space-y-2 text-lg text-secondary leading-relaxed list-disc'>
 										<li>
-											How to stop fighting your thoughts and gain control back
+											How to accept imperfection without losing your drive
 										</li>
-										<li>How to let go of perfectionism and self-criticism</li>
 										<li>
-											How to create space between your thoughts and your
-											identity
+											How to separate your identity from your achievements
+										</li>
+										<li>
+											How to rest and take breaks without feeling guilty
 										</li>
 									</ul>
 								</div>
@@ -119,41 +137,49 @@ export default function Services() {
 										With Solution-Focused strategies, you'll learn:
 									</h4>
 									<ul className='space-y-2 text-lg text-secondary leading-relaxed list-disc'>
-										<li>Real-life coping skills you can use immediately</li>
-										<li>Small changes that make a big impact</li>
 										<li>
-											Confidence in your ability to handle whatever comes next
+											Practical ways to balance achievement with self-care
+										</li>
+										<li>
+											How to set boundaries around work and responsibilities
+										</li>
+										<li>
+											Confidence in your ability to succeed without burning out
 										</li>
 									</ul>
 								</div>
 							</div>
 
 							<p className='mt-8 text-lg text-secondary leading-relaxed italic'>
-								Therapy isn't about "just thinking positive."
+								Therapy isn't about lowering your standards or giving up on your
+								goals.
 							</p>
 							<p className='text-lg text-secondary leading-relaxed'>
-								It's about understanding <em>why</em> your brain reacts the way
-								it does and learning ways to feel calmer, safer, and more
-								grounded.
+								It's about learning to achieve in ways that don't drain you, and
+								recognizing that your worth isn't measured by how much you
+								accomplish.
 							</p>
 						</div>
 
 						<div className='mt-12'>
 							<h3 className='text-3xl font-serif text-primary mb-6'>
-								What changes when anxiety loosens its grip
+								What changes when you let go of perfectionism
 							</h3>
 							<ul className='space-y-3 text-lg text-secondary leading-relaxed list-disc'>
-								<li>You make decisions without spiraling</li>
-								<li>You stop replaying every conversation</li>
-								<li>You can rest without guilt</li>
-								<li>You feel more confident setting boundaries</li>
+								<li>You can rest without feeling guilty</li>
+								<li>You set realistic goals and actually achieve them</li>
+								<li>You celebrate progress instead of focusing on flaws</li>
+								<li>You can delegate and ask for help when needed</li>
 								<li>
-									You can enjoy your life without carrying everyone's
-									expectations
+									You find joy and satisfaction in your work and life again
+								</li>
+								<li>
+									You understand that your worth isn't tied to your
+									achievements
 								</li>
 							</ul>
 							<p className='mt-6 text-lg font-medium text-primary'>
-								You don't have to live in your head anymore. There is another
+								You don't have to burn out to prove your worth. There is another
 								way.
 							</p>
 						</div>
@@ -168,15 +194,6 @@ export default function Services() {
 						Ready to feel better?
 					</h2>
 					<div className='text-lg text-secondary leading-relaxed'>
-						{/* <p>
-              If anxiety has been running your life, therapy can help you take the power back.
-            </p>
-            <p>
-              You're not "too sensitive," "too dramatic," or "overreacting."
-            </p>
-            <p className="font-medium">
-              Your feelings make sense and they matter.
-            </p> */}
 						<p className='text-secondary mt-4'>
 							<strong>Click below to schedule a free 15-minute consult.</strong>
 						</p>
@@ -202,3 +219,4 @@ export default function Services() {
 		</>
 	);
 }
+

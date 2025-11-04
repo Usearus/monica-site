@@ -9,6 +9,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	href?: string;
 	target?: string;
 	rel?: string;
+	[key: `data-${string}`]: string | undefined;
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -37,6 +38,22 @@ export default function Button({
 
 	const combinedClassName = `${baseStyles} ${variantStyles[variant]} ${className}`.trim();
 
+	// Extract data attributes and other valid props
+	const anchorProps: Record<string, any> = {};
+	const buttonProps: Record<string, any> = {};
+	
+	Object.keys(props).forEach((key) => {
+		const value = (props as any)[key];
+		// Pass through data attributes and other valid HTML attributes
+		if (key.startsWith('data-') || key.startsWith('aria-')) {
+			anchorProps[key] = value;
+			buttonProps[key] = value;
+		} else if (key === 'onClick' || key === 'onMouseEnter' || key === 'onMouseLeave') {
+			anchorProps[key] = value;
+			buttonProps[key] = value;
+		}
+	});
+
 	if (asChild && href) {
 		return (
 			<Link
@@ -44,6 +61,7 @@ export default function Button({
 				target={target}
 				rel={rel}
 				className={combinedClassName}
+				{...anchorProps}
 			>
 				{children}
 			</Link>
@@ -57,6 +75,7 @@ export default function Button({
 				target={target}
 				rel={rel}
 				className={combinedClassName}
+				{...anchorProps}
 			>
 				{children}
 			</a>
@@ -64,7 +83,7 @@ export default function Button({
 	}
 
 	return (
-		<button className={combinedClassName} onClick={onClick} {...props}>
+		<button className={combinedClassName} onClick={onClick} {...buttonProps} {...props}>
 			{children}
 		</button>
 	);
