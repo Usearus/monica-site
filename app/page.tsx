@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import Button from "@/components/Button";
+import { QuoteIcon } from '@radix-ui/react-icons';
 
 export default function Home() {
   return (
@@ -24,20 +26,20 @@ export default function Home() {
                 *Sessions available in English and Spanish
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
-                <Link
-                  href="/services"
-                  className="px-8 py-3 bg-sage text-white hover:brightness-90 transition-colors rounded-full"
+                <Button
+                  href="#services"
+                  variant="secondary"
                 >
                   View services
-                </Link>
-                <a
+                </Button>
+                <Button
                   href="https://monica-denais.clientsecure.me/contact-widget"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-3 bg-bark text-white hover:bg-sage transition-colors rounded-full"
+                  variant="primary"
                 >
                   Free consultation
-                </a>
+                </Button>
               </div>
             </div>
 
@@ -88,16 +90,78 @@ export default function Home() {
               <p className="text-lg text-secondary leading-relaxed font-medium">
                 If you're ready for a space where you don't have to be "the strong one," you're in the right place.
               </p>
-              <Link
+              <Button
                 href="/about"
-                className="inline-block px-8 py-3 bg-sage text-white hover:brightness-90 transition-colors rounded-full"
+                variant="secondary"
+                asChild
               >
                 Learn more about me
-              </Link>
+              </Button>
             </div>
           </div>
         </div>
       </section>
+
+
+      {/* What We Specialize In Section */}
+      <section id="services" className="bg-beige px-4 py-8 lg:py-24 scroll-mt-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left side - content */}
+            <div className="space-y-6">
+              <h3 className="text-sm font-sans text-primary uppercase tracking-wide">
+                We offer a range of counselling services
+              </h3>
+              <h2 className="text-4xl md:text-5xl font-serif text-primary">
+                What We Specialize In
+              </h2>
+              <p className="text-lg text-secondary leading-relaxed">
+                I help first gen ambitious women and eldest daughters navigate the emotional weight of responsibility, perfectionism, and cultural expectations. Using CBT, ACT, and solution-focused therapy, we work together to untangle the stress, overthinking, and silent pressure you've been carrying for years.
+              </p>
+              
+              <div>
+                <p className="text-lg font-medium text-secondary mb-4">
+                  <strong>I specialize in supporting women who experience:</strong>
+                </p>
+                <ul className="space-y-2 text-lg text-secondary leading-relaxed list-disc">
+                  <li>Anxiety, overthinking, and constant worry</li>
+                  <li>OCD and intrusive thoughts that feel impossible to shut off</li>
+                  <li>Burnout from work, caregiving, school, or responsibilities at home</li>
+                  <li>Perfectionism and the fear of disappointing others</li>
+                  <li>Family conflict or feeling "stuck in the middle"</li>
+                  <li>The pressure of being the first to do everything (first-gen stress)</li>
+                  <li>Trouble setting boundaries or saying "no" without guilt</li>
+                  <li>Emotional exhaustion from always being the reliable one</li>
+                  <li>Self-doubt, low self-esteem, or never feeling "good enough"</li>
+                  <li>Life transitions and identity changes</li>
+                </ul>
+              </div>
+
+              <Button
+                href="https://monica-denais.clientsecure.me/contact-widget"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="secondary"
+                className="mt-6"
+              >
+                Book a session
+              </Button>
+            </div>
+
+            {/* Right side - image */}
+            <div className="hidden md:block relative rounded-lg overflow-hidden">
+              <Image
+                src="/services-1.JPG"
+                alt="Monica Denais, Licensed Professional Counselor"
+                width={600}
+                height={600}
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Client Testimonies Section */}
       <section className="bg-sage px-4 py-16">
@@ -109,9 +173,9 @@ export default function Home() {
             {/* Testimony 1 - Placeholder */}
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="mb-4">
-                <svg className="w-8 h-8 text-sage" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10z"/>
-                </svg>
+                <div className="w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center">
+                  <QuoteIcon className="w-6 h-6 text-sage" />
+                </div>
               </div>
               <p className="text-lg text-secondary mb-4 italic leading-relaxed">
                 "Testimony from Silvia - coming soon"
@@ -122,9 +186,9 @@ export default function Home() {
             {/* Testimony 2 - Placeholder */}
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="mb-4">
-                <svg className="w-8 h-8 text-sage" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10z"/>
-                </svg>
+                <div className="w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center">
+                  <QuoteIcon className="w-6 h-6 text-sage" />
+                </div>
               </div>
               <p className="text-lg text-secondary mb-4 italic leading-relaxed">
                 "Testimony from Iz - coming soon"
@@ -135,9 +199,9 @@ export default function Home() {
             {/* Testimony 3 - Placeholder */}
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="mb-4">
-                <svg className="w-8 h-8 text-sage" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-10z"/>
-                </svg>
+                <div className="w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center">
+                  <QuoteIcon className="w-6 h-6 text-sage" />
+                </div>
               </div>
               <p className="text-lg text-secondary mb-4 italic leading-relaxed">
                 "Testimony from Nyisha - coming soon"

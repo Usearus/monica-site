@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Footer from "@/components/Footer";
+import { ChevronDownIcon } from '@radix-ui/react-icons';
 
 export default function FAQs() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -54,16 +55,11 @@ export default function FAQs() {
                   className="w-full p-6 text-left flex items-center justify-between hover:bg-beige transition-colors"
                 >
                   <h2 className="text-xl md:text-2xl font-serif text-secondary pr-8">{faq.question}</h2>
-                  <svg
+                  <ChevronDownIcon
                     className={`w-6 h-6 text-secondary shrink-0 transition-transform duration-200 ${
                       openIndex === index ? 'rotate-180' : ''
                     }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
+                  />
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${

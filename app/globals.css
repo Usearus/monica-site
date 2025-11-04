@@ -36,6 +36,10 @@
   --color-primary-inverse: var(--text-primary-inverse);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

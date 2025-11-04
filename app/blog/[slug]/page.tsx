@@ -1,15 +1,18 @@
-import Link from "next/link";
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
-import Footer from "@/components/Footer";
+import Link from 'next/link';
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import Footer from '@/components/Footer';
+import Button from '@/components/Button';
+import { ChevronLeftIcon } from '@radix-ui/react-icons';
 
 // Blog posts data
 const posts = {
-  "eldest-daughter-syndrome": {
-    title: "Eldest Daughter Syndrome",
-    date: "January 15, 2025",
-    excerpt: "Understanding the unique pressures faced by first-born daughters and how to break free from perfectionism and people-pleasing tendencies.",
-    content: `
+	'eldest-daughter-syndrome': {
+		title: 'Eldest Daughter Syndrome',
+		date: 'January 15, 2025',
+		excerpt:
+			'Understanding the unique pressures faced by first-born daughters and how to break free from perfectionism and people-pleasing tendencies.',
+		content: `
       <p>If you're a first-born daughter or eldest daughter, you might recognize this pattern: you've always felt responsible for everyone else's well-being, pushed yourself to perfection, and found it nearly impossible to say no when asked for help (even when you desperately need to rest). This is often called "Eldest Daughter Syndrome," and understanding it is the first step toward reclaiming your life.</p>
 
       <h2>What is Eldest Daughter Syndrome?</h2>
@@ -47,91 +50,103 @@ const posts = {
       <p>If you recognize yourself in this description, know that you're not alone, and you don't have to keep carrying this weight. As a first-gen Latina and eldest daughter myself, I understand exactly what this feels like. I help ambitious women like you break free from these patterns so you can create a life that's authentic to you—not one based on meeting everyone else's expectations.</p>
 
       <p>Therapy can provide a safe space to explore these patterns, understand where they come from, and develop new ways of being that honor both your values and your needs. Together, we can work toward solutions that bring lasting change.</p>
-    `
-  },
-  "understanding-teen-mental-health": {
-    title: "Understanding Teen Mental Health",
-    date: "December 15, 2024",
-    excerpt: "Learn about common mental health challenges facing teenagers today and how to support them.",
-    content: "<p>Content coming soon...</p>"
-  },
-  "benefits-of-family-therapy": {
-    title: "The Benefits of Family Therapy",
-    date: "December 10, 2024",
-    excerpt: "Discover how family counselling can strengthen relationships and improve communication.",
-    content: "<p>Content coming soon...</p>"
-  },
-  "managing-holiday-stress": {
-    title: "Managing Holiday Stress",
-    date: "December 5, 2024",
-    excerpt: "Tips and strategies for coping with stress during the holiday season.",
-    content: "<p>Content coming soon...</p>"
-  }
+    `,
+	},
+	'understanding-teen-mental-health': {
+		title: 'Understanding Teen Mental Health',
+		date: 'December 15, 2024',
+		excerpt:
+			'Learn about common mental health challenges facing teenagers today and how to support them.',
+		content: '<p>Content coming soon...</p>',
+	},
+	'benefits-of-family-therapy': {
+		title: 'The Benefits of Family Therapy',
+		date: 'December 10, 2024',
+		excerpt:
+			'Discover how family counselling can strengthen relationships and improve communication.',
+		content: '<p>Content coming soon...</p>',
+	},
+	'managing-holiday-stress': {
+		title: 'Managing Holiday Stress',
+		date: 'December 5, 2024',
+		excerpt:
+			'Tips and strategies for coping with stress during the holiday season.',
+		content: '<p>Content coming soon...</p>',
+	},
 };
 
 export async function generateStaticParams() {
-  return Object.keys(posts).map((slug) => ({
-    slug,
-  }));
+	return Object.keys(posts).map((slug) => ({
+		slug,
+	}));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params;
-  const post = posts[slug as keyof typeof posts];
-  
-  if (!post) {
-    return {
-      title: "Post Not Found",
-    };
-  }
+export async function generateMetadata({
+	params,
+}: {
+	params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+	const { slug } = await params;
+	const post = posts[slug as keyof typeof posts];
 
-  return {
-    title: `${post.title} | Monica Denais`,
-    description: post.excerpt,
-  };
+	if (!post) {
+		return {
+			title: 'Post Not Found',
+		};
+	}
+
+	return {
+		title: `${post.title} | Monica Denais`,
+		description: post.excerpt,
+	};
 }
 
-export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const post = posts[slug as keyof typeof posts];
+export default async function BlogPost({
+	params,
+}: {
+	params: Promise<{ slug: string }>;
+}) {
+	const { slug } = await params;
+	const post = posts[slug as keyof typeof posts];
 
-  if (!post) {
-    notFound();
-  }
+	if (!post) {
+		notFound();
+	}
 
-  return (
-    <>
-      <div className="bg-white px-4 py-8 lg:py-24">
-        <div className="max-w-4xl mx-auto">
-          <Link 
-            href="/blog" 
-            className="text-sage hover:text-primary transition-colors mb-8 inline-block"
-          >
-            ← Back to Blog
-          </Link>
+	return (
+		<>
+			<div className='bg-white px-4 py-8 lg:py-24'>
+				<div className='max-w-4xl mx-auto'>
+					<Link
+						href='/blog'
+						className='text-primary hover:text-sage transition-colors mb-8 inline-flex items-center gap-2'>
+						<ChevronLeftIcon className='w-5 h-5' />
+						Back to blog
+					</Link>
 
-          <article className="bg-white p-8 md:p-12 rounded-lg shadow-sm border border-olivewood/10">
-            <p className="text-sm text-sage mb-4">{post.date}</p>
-            <h1 className="text-4xl md:text-5xl font-serif text-primary mb-6">{post.title}</h1>
-            
-            <div 
-              className="prose prose-lg max-w-none text-primary leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
+					<article className='bg-white p-8 md:p-12 rounded-lg shadow-sm border border-olivewood/10'>
+						<p className='text-sm text-sage mb-4'>{post.date}</p>
+						<h1 className='text-4xl md:text-5xl font-serif text-primary mb-6'>
+							{post.title}
+						</h1>
 
-            <div className="mt-12 pt-8 border-t border-olivewood/20">
-              <Link
-                href="/contact"
-                className="inline-block px-8 py-3 bg-sage text-white hover:brightness-90 transition-colors rounded-full"
-              >
-                Interested in Therapy? Let's Talk
-              </Link>
-            </div>
-          </article>
-        </div>
-      </div>
-      <Footer />
-    </>
-  );
+						<div
+							className='prose prose-lg max-w-none text-primary leading-relaxed'
+							dangerouslySetInnerHTML={{ __html: post.content }}
+						/>
+
+						<div className='mt-12 pt-8 border-t border-olivewood/20'>
+							<Button
+								href='/contact'
+								variant='secondary'
+								asChild>
+								Interested in therapy? Let's talk
+							</Button>
+						</div>
+					</article>
+				</div>
+			</div>
+			<Footer />
+		</>
+	);
 }
-
