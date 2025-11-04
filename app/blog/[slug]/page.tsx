@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import Footer from '@/components/Footer';
 import Button from '@/components/Button';
 import { ChevronLeftIcon } from '@radix-ui/react-icons';
+import SimplePracticeWidget from '@/components/SimplePracticeWidget';
 
 // Blog posts data
 const posts = {
@@ -136,12 +137,18 @@ export default async function BlogPost({
 						/>
 
 						<div className='mt-12 pt-8 border-t border-olivewood/20'>
-							<Button
+							{/* <Button
 								href='/contact'
 								variant='secondary'
 								asChild>
 								Interested in therapy? Let's talk
-							</Button>
+							</Button> */}
+              <SimplePracticeWidget
+									buttonText="Interested in therapy? Let's talk"
+									widgetType='OAR'
+									variant='secondary'
+									className='mt-6'
+								/>
 						</div>
 					</article>
 				</div>

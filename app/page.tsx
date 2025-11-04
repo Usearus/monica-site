@@ -15,15 +15,17 @@ export default function Home() {
 						{/* Left content */}
 						<div className='space-y-6'>
 							<h1 className='text-3xl md:text-6xl font-serif text-primary leading-tight'>
-								Therapy for Ambitious Women & First Gens in Texas
+								Therapy for anxiety, perfectionism, and overthinking in Texas
 								{/* Break Free From Perfectionism & Embrace Confidence */}
 							</h1>
 							<p className='text-lg text-primary leading-relaxed'>
 								{/* As a first-gen Latina and eldest daughter, I know what it feels like to hold everything together for everyone else. As a licensed 
               counselor, I help ambitious women break free from perfectionism and create a life they enjoy. */}
-								I specialize in CBT and solution-focused therapy for
-								perfectionism, anxiety, OCD, burnout, and family issues. Let's
-								work through the pressure, expectations, and burnout together.
+								Online therapy for ambitious women, first gens, and eldest
+								daughters struggling with anxiety, intrusive thoughts, and
+								burnout, and family pressure. Using cognitive behavioral therapy
+								(CBT), acceptance and commitment therapy (ACT), and
+								solution-focused strategies.
 							</p>
 							<p className='text-base text-secondary mt-2'>
 								*Sessions available in English and Spanish
@@ -39,8 +41,8 @@ export default function Home() {
 									variant='primary'>
 									Free consultation
 								</Button> */}
-                <SimplePracticeWidget
-									buttonText='Free consultation'
+								<SimplePracticeWidget
+									buttonText='Book free consult'
 									widgetType='OAR'
 									variant='primary'
 									className='hidden md:inline-block'
@@ -81,7 +83,7 @@ export default function Home() {
 						{/* Right side - content */}
 						<div className='space-y-6'>
 							<h2 className='text-4xl md:text-5xl font-serif text-primary'>
-								Meet Monica Denais, Licensed Professional Counselor in Texas
+								Meet Monica Denais, Licensed Professional Counselor
 							</h2>
 							<p className='text-lg text-secondary leading-relaxed'>
 								I'm a Licensed Professional Counselor and first-gen Latina who
@@ -168,12 +170,12 @@ export default function Home() {
 								className='mt-6'>
 								Book a session
 							</Button> */}
-              <SimplePracticeWidget
-									buttonText='Book a session'
-									widgetType='OAR'
-									variant='secondary'
-									className='mt-2'
-								/>
+							<SimplePracticeWidget
+								buttonText='Book a session'
+								widgetType='OAR'
+								variant='secondary'
+								className='mt-2'
+							/>
 						</div>
 
 						{/* Right side - image */}
@@ -243,7 +245,6 @@ export default function Home() {
 				contact={true}
 				variant='primary-ghost'
 			/> */}
-
 
 			<Footer />
 		</div>

@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Break Free From Perfectionism | Monica Denais - Licensed Counselor",
+    default: "Monica Denais - Licensed Counselor",
     template: "%s | Monica Denais"
   },
   description: "Licensed counselor in Plano, TX helping ambitious women break free from perfectionism and embrace confidence. Solution-focused therapy for lasting change.",
-  keywords: ["therapy Plano TX", "counselor Plano Texas", "perfectionism therapy", "women's counseling", "solution-focused therapy", "confidence counseling", "mental health Plano"],
+  keywords: ["therapy McKinney TX", "counselor McKinney Texas", "perfectionism therapy", "women's counseling", "solution-focused therapy", "confidence counseling", "mental health Plano", "North Texas counseling", "anxiety therapist McKinney", "anxiety counseling McKinney" ],
   authors: [{ name: "Monica Denais" }],
   creator: "Monica Denais",
   openGraph: {

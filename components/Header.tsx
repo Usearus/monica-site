@@ -52,12 +52,12 @@ export default function Header() {
 			{/* Top info bar */}
 			<div className='bg-olivewood text-primary-inverse py-3 px-4'>
 				<div className='max-w-7xl mx-auto flex flex-row justify-between items-center text-sm gap-2'>
-					<div>
-						In-Person & Virtual Counselling & Psychotherapy Services Available
-					</div>
+					<p className='text-balance'>
+						Online therapy available in English and Spanish
+					</p>
 					<div className='flex items-center gap-1 shrink-0'>
 						<LocationIcon className='w-4 h-4' />
-						<span>Plano, TX</span>
+						<span>Serving Texas residents</span>
 					</div>
 				</div>
 			</div>
