@@ -53,27 +53,6 @@ const posts = {
       <p>Therapy can provide a safe space to explore these patterns, understand where they come from, and develop new ways of being that honor both your values and your needs. Together, we can work toward solutions that bring lasting change.</p>
     `,
 	},
-	'understanding-teen-mental-health': {
-		title: 'Understanding Teen Mental Health',
-		date: 'December 15, 2024',
-		excerpt:
-			'Learn about common mental health challenges facing teenagers today and how to support them.',
-		content: '<p>Content coming soon...</p>',
-	},
-	'benefits-of-family-therapy': {
-		title: 'The Benefits of Family Therapy',
-		date: 'December 10, 2024',
-		excerpt:
-			'Discover how family counselling can strengthen relationships and improve communication.',
-		content: '<p>Content coming soon...</p>',
-	},
-	'managing-holiday-stress': {
-		title: 'Managing Holiday Stress',
-		date: 'December 5, 2024',
-		excerpt:
-			'Tips and strategies for coping with stress during the holiday season.',
-		content: '<p>Content coming soon...</p>',
-	},
 };
 
 export async function generateStaticParams() {

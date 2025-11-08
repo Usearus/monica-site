@@ -12,25 +12,8 @@ export default function Blog() {
       slug: "eldest-daughter-syndrome",
       title: "Eldest Daughter Syndrome",
       date: "January 15, 2025",
-      excerpt: "Understanding the unique pressures faced by first-born daughters and how to break free from perfectionism and people-pleasing tendencies.",
-    },
-    {
-      slug: "understanding-teen-mental-health",
-      title: "Understanding Teen Mental Health",
-      date: "December 15, 2024",
-      excerpt: "Learn about common mental health challenges facing teenagers today and how to support them.",
-    },
-    {
-      slug: "benefits-of-family-therapy",
-      title: "The Benefits of Family Therapy",
-      date: "December 10, 2024",
-      excerpt: "Discover how family counselling can strengthen relationships and improve communication.",
-    },
-    {
-      slug: "managing-holiday-stress",
-      title: "Managing Holiday Stress",
-      date: "December 5, 2024",
-      excerpt: "Tips and strategies for coping with stress during the holiday season.",
+      excerpt:
+        "Understanding the unique pressures faced by first-born daughters and how to break free from perfectionism and people-pleasing tendencies.",
     },
   ];
 
