@@ -31,7 +31,7 @@ export default function Home() {
 								*Sessions available in English and Spanish
 							</p>
 							<div className='flex flex-wrap gap-4 mt-8'>
-								<Button href='#services' variant='secondary'>
+								<Button href='#services-overview' variant='secondary'>
 									View services
 								</Button>
 								{/* <Button
@@ -114,10 +114,90 @@ export default function Home() {
 				</div>
 			</section>
 
+
+			{/* Featured On Section */}
+			<section className='bg-white px-4 py-16'>
+				<div className='max-w-7xl mx-auto text-center space-y-10'>
+					<div className='space-y-4'>
+						<p className='uppercase tracking-[0.3em] text-sm text-secondary'>
+							Featured On
+						</p>
+						{/* <h2 className='text-3xl md:text-4xl font-serif text-primary'>
+							Trusted by media and communities that champion mental health
+						</h2> */}
+					</div>
+					<div className='grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 items-center justify-items-center'>
+						<Link
+							href='https://www.womenshealthmag.com/relationships/a36652423/how-to-be-vulnerable-in-a-relationship/'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='h-20 w-full max-w-[200px] flex items-center justify-center p-4 transition-opacity hover:opacity-80'>
+							<Image
+								src='/Womens-Health-Logo.png'
+								alt="Women's Health logo"
+								width={200}
+								height={80}
+								className='w-full h-auto object-contain'
+							/>
+						</Link>
+						<Link
+							href='https://byloftie.com/blogs/how-to-sleep/a-therapist-s-guide-to-a-sustainable-sleep-routine?srsltid=AfmBOorDtn-v75WhpZMCf2h2fS3iVoYuJ6AwYbPckdlFAPEi5DPgre7i'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='h-20 w-full max-w-[200px] flex items-center justify-center p-4 transition-opacity hover:opacity-80'>
+							<Image
+								src='/loftie-logo_2000x.webp'
+								alt='Loftie logo'
+								width={200}
+								height={80}
+								className='w-full h-auto object-contain'
+							/>
+						</Link>
+						<Link
+							href='https://www.businessinsider.com/how-to-talk-to-non-black-family-race-therapist-tips-2020-6'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='h-20 w-full max-w-[200px] flex items-center justify-center p-4 transition-opacity hover:opacity-80'>
+							<Image
+								src='/Insider-Logo-2021.png'
+								alt='Insider logo'
+								width={200}
+								height={80}
+								className='w-full h-auto object-contain'
+							/>
+						</Link>
+						<Link
+							href='https://www.yahoo.com/lifestyle/therapist-explains-why-stress-cleaning-225852267.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAHBM6vW8WAzbrQAPHKdiqcL-ljjkSN4LFmtFZfHAWNOtkgrpunhhatweMfzciDihn9xK9nx3ge_XhkEJRf1UMZ9pYos3eUl_pSvbpwbtELhbIbzsdrZxwN3Rep9kTx93w4vo6ZokI8U-rwZOpDEKNkJGg8OidfP2fUVlATAoxwgK'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='h-20 w-full max-w-[200px] flex items-center justify-center p-4 transition-opacity hover:opacity-80'>
+							<Image
+								src='/website_yahoolife.webp'
+								alt='Yahoo Life logo'
+								width={200}
+								height={80}
+								className='w-full h-auto object-contain'
+							/>
+						</Link>
+						<Link
+							href='https://medium.com/authority-magazine/monica-denais-on-how-to-get-past-your-perfectionism-and-just-do-it-3e03fbcd8493'
+							target='_blank'
+							rel='noopener noreferrer'
+							className='h-20 w-full max-w-[200px] flex items-center justify-center p-4 transition-opacity hover:opacity-80 col-span-2 md:col-span-1 justify-self-center'>
+							<Image
+								src='/Medium-Wordmark-Black.png'
+								alt='Medium logo'
+								width={200}
+								height={80}
+								className='w-full h-auto object-contain'
+							/>
+						</Link>
+					</div>
+				</div>
+			</section>
+			
 			{/* What We Specialize In Section */}
-			<section
-				id='services'
-				className='bg-beige px-4 py-8 lg:py-24 scroll-mt-32 md:scroll-mt-20'>
+			<section className='bg-beige px-4 py-8 lg:py-24 scroll-mt-32 md:scroll-mt-20'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='grid md:grid-cols-2 gap-12 items-center'>
 						{/* Left side - content */}
@@ -193,17 +273,19 @@ export default function Home() {
 			</section>
 
 			{/* Services Overview Section */}
-			<section className='bg-white px-4 py-16'>
+			<section
+				id='services-overview'
+				className='bg-white px-4 py-16 scroll-mt-32 md:scroll-mt-24'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='text-center mb-12 space-y-4'>
 						<h2 className='text-4xl md:text-5xl font-serif text-primary'>
 							Services I Offer
 						</h2>
-						<p className='text-lg text-secondary max-w-2xl mx-auto leading-relaxed'>
+						{/* <p className='text-lg text-secondary max-w-2xl mx-auto leading-relaxed'>
 							Explore focused support tailored for ambitious women navigating
 							anxiety, perfectionism, and intrusive thoughts. Each path offers
 							evidence-based care designed to meet you where you are.
-						</p>
+						</p> */}
 					</div>
 					<div className='grid gap-8 md:grid-cols-3'>
 						<div className='rounded-3xl border border-sage/30 bg-sage/10 p-8 flex flex-col'>
@@ -214,11 +296,14 @@ export default function Home() {
 								Build calm, confidence, and compassionate self-talk so you can
 								step out of constant worry and into a steadier life.
 							</p>
-							<Button href='/services' variant='secondary' className='mt-8'>
+							<Button
+								href='/services'
+								variant='secondary'
+								className='mt-8 w-fit justify-start'>
 								Learn more
 							</Button>
 						</div>
-						<div className='rounded-3xl border border-sage/40 bg-sage/20 p-8 flex flex-col'>
+						<div className='rounded-3xl border border-sage/30 bg-sage/10 p-8 flex flex-col'>
 							<h3 className='text-2xl font-serif text-primary mb-4'>
 								Therapy for Burnout &amp; Perfectionism
 							</h3>
@@ -229,7 +314,7 @@ export default function Home() {
 							<Button
 								href='/services/burnout-perfectionism'
 								variant='secondary'
-								className='mt-8'>
+								className='mt-8 w-fit justify-start'>
 								Learn more
 							</Button>
 						</div>
@@ -244,13 +329,14 @@ export default function Home() {
 							<Button
 								href='/services/ocd-intrusive-thoughts'
 								variant='secondary'
-								className='mt-8'>
+								className='mt-8 w-fit justify-start'>
 								Learn more
 							</Button>
 						</div>
 					</div>
 				</div>
 			</section>
+
 
 			{/* Client Testimonies Section */}
 			{/* <section className='bg-sage px-4 py-16'>
