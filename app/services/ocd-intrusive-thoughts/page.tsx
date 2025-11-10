@@ -15,37 +15,51 @@ export default function OCDIntrusiveThoughts() {
 		<>
 			{/* New Hero Section */}
 			<section className='bg-beige px-4 py-8 lg:py-24'>
-				<div className='max-w-4xl mx-auto'>
-					<div className='text-center mb-8'>
-						<h1 className='text-4xl md:text-5xl lg:text-6xl font-serif text-primary mb-6 leading-tight'>
-							Therapy for OCD & Intrusive Thoughts
-						</h1>
-						<p className='text-xl md:text-2xl text-secondary italic'>
-							For the women whose minds won't let them rest.
-						</p>
-					</div>
-					<div className='space-y-6 text-lg text-secondary leading-relaxed'>
-						<p>
-							If you're experiencing unwanted, distressing thoughts that keep
-							coming back, or if you feel compelled to do certain things to
-							relieve anxiety, you might be dealing with OCD or intrusive
-							thoughts.
-						</p>
-						<p className='font-medium'>And the hard part?</p>
-						<p>
-							These thoughts and behaviors can feel shameful or embarrassing,
-							making it hard to talk about them, even though they're not your
-							fault.
-						</p>
-						<p>
-							Many of my clients are high-achieving women who've learned to
-							hide their struggles. You may be functioning well on the surface,
-							but internally dealing with repetitive thoughts or compulsive
-							behaviors that take up significant time and energy.
-						</p>
-						<p className='font-medium text-primary text-xl'>
-							You don't have to manage this alone anymore.
-						</p>
+				<div className='max-w-7xl mx-auto'>
+					<div className='grid md:grid-cols-2 gap-12 items-center'>
+						<div className='space-y-8'>
+							<div className='space-y-4'>
+								<h1 className='text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-tight'>
+									Therapy for OCD &amp; Intrusive Thoughts
+								</h1>
+								<p className='text-xl md:text-2xl text-secondary italic'>
+									For the women whose minds won't let them rest.
+								</p>
+							</div>
+							<div className='space-y-6 text-lg text-secondary leading-relaxed'>
+								<p>
+									If you're experiencing unwanted, distressing thoughts that
+									keep coming back, or if you feel compelled to do certain
+									things to relieve anxiety, you might be dealing with OCD or
+									intrusive thoughts.
+								</p>
+								<p className='font-medium'>And the hard part?</p>
+								<p>
+									These thoughts and behaviors can feel shameful or
+									embarrassing, making it hard to talk about them, even though
+									they're not your fault.
+								</p>
+								<p>
+									Many of my clients are high-achieving women who've learned to
+									hide their struggles. You may be functioning well on the
+									surface, but internally dealing with repetitive thoughts or
+									compulsive behaviors that take up significant time and energy.
+								</p>
+								<p className='font-medium text-primary text-xl'>
+									You don't have to manage this alone anymore.
+								</p>
+							</div>
+						</div>
+						<div className='relative rounded-lg overflow-hidden w-full max-w-md mx-auto md:ml-auto md:mx-0'>
+							<Image
+								src='/services-hero.jpg'
+								alt='Therapy space with calming decor'
+								width={600}
+								height={600}
+								className='w-full h-auto object-cover rounded-lg'
+								priority
+							/>
+						</div>
 					</div>
 				</div>
 			</section>

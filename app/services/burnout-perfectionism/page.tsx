@@ -15,38 +15,52 @@ export default function BurnoutPerfectionism() {
 		<>
 			{/* New Hero Section */}
 			<section className='bg-beige px-4 py-8 lg:py-24'>
-				<div className='max-w-4xl mx-auto'>
-					<div className='text-center mb-8'>
-						<h1 className='text-4xl md:text-5xl lg:text-6xl font-serif text-primary mb-6 leading-tight'>
-							Therapy for Burnout & Perfectionism
-						</h1>
-						<p className='text-xl md:text-2xl text-secondary italic'>
-							For the women who can't stop pushing themselves.
-						</p>
-					</div>
-					<div className='space-y-6 text-lg text-secondary leading-relaxed'>
-						<p>
-							If you're constantly setting impossibly high standards for
-							yourself, working until you're exhausted, and still feeling like
-							you're not doing enough, you might be experiencing burnout and
-							perfectionism.
-						</p>
-						<p className='font-medium'>And the hard part?</p>
-						<p>
-							You've been praised for your high standards and your ability to
-							get things done, so it's hard to recognize when those same
-							qualities are actually hurting you.
-						</p>
-						<p>
-							Many of my clients are ambitious women, eldest daughters, or
-							first-generation professionals who learned early on that their
-							worth was tied to their achievements. You may be the one who
-							excels at everything, but quietly struggling with the constant
-							pressure to maintain that standard.
-						</p>
-						<p className='font-medium text-primary text-xl'>
-							You don't have to push through it alone anymore.
-						</p>
+				<div className='max-w-7xl mx-auto'>
+					<div className='grid md:grid-cols-2 gap-12 items-center'>
+						<div className='space-y-8'>
+							<div className='space-y-4'>
+								<h1 className='text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-tight'>
+									Therapy for Burnout &amp; Perfectionism
+								</h1>
+								<p className='text-xl md:text-2xl text-secondary italic'>
+									For the women who can't stop pushing themselves.
+								</p>
+							</div>
+							<div className='space-y-6 text-lg text-secondary leading-relaxed'>
+								<p>
+									If you're constantly setting impossibly high standards for
+									yourself, working until you're exhausted, and still feeling
+									like you're not doing enough, you might be experiencing
+									burnout and perfectionism.
+								</p>
+								<p className='font-medium'>And the hard part?</p>
+								<p>
+									You've been praised for your high standards and your ability
+									to get things done, so it's hard to recognize when those same
+									qualities are actually hurting you.
+								</p>
+								<p>
+									Many of my clients are ambitious women, eldest daughters, or
+									first-generation professionals who learned early on that their
+									worth was tied to their achievements. You may be the one who
+									excels at everything, but quietly struggling with the constant
+									pressure to maintain that standard.
+								</p>
+								<p className='font-medium text-primary text-xl'>
+									You don't have to push through it alone anymore.
+								</p>
+							</div>
+						</div>
+						<div className='relative rounded-lg overflow-hidden w-full max-w-md mx-auto md:ml-auto md:mx-0'>
+							<Image
+								src='/services-hero.jpg'
+								alt='Therapy space with calming decor'
+								width={600}
+								height={600}
+								className='w-full h-auto object-cover rounded-lg'
+								priority
+							/>
+						</div>
 					</div>
 				</div>
 			</section>

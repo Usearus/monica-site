@@ -192,6 +192,66 @@ export default function Home() {
 				</div>
 			</section>
 
+			{/* Services Overview Section */}
+			<section className='bg-white px-4 py-16'>
+				<div className='max-w-7xl mx-auto'>
+					<div className='text-center mb-12 space-y-4'>
+						<h2 className='text-4xl md:text-5xl font-serif text-primary'>
+							Services I Offer
+						</h2>
+						<p className='text-lg text-secondary max-w-2xl mx-auto leading-relaxed'>
+							Explore focused support tailored for ambitious women navigating
+							anxiety, perfectionism, and intrusive thoughts. Each path offers
+							evidence-based care designed to meet you where you are.
+						</p>
+					</div>
+					<div className='grid gap-8 md:grid-cols-3'>
+						<div className='rounded-3xl border border-sage/30 bg-sage/10 p-8 flex flex-col'>
+							<h3 className='text-2xl font-serif text-primary mb-4'>
+								Therapy for Anxiety &amp; Overthinking
+							</h3>
+							<p className='text-secondary leading-relaxed flex-1'>
+								Build calm, confidence, and compassionate self-talk so you can
+								step out of constant worry and into a steadier life.
+							</p>
+							<Button href='/services' variant='secondary' className='mt-8'>
+								Learn more
+							</Button>
+						</div>
+						<div className='rounded-3xl border border-sage/40 bg-sage/20 p-8 flex flex-col'>
+							<h3 className='text-2xl font-serif text-primary mb-4'>
+								Therapy for Burnout &amp; Perfectionism
+							</h3>
+							<p className='text-secondary leading-relaxed flex-1'>
+								Release impossible standards, set grounding boundaries, and find
+								a sustainable pace that honors both your drive and your rest.
+							</p>
+							<Button
+								href='/services/burnout-perfectionism'
+								variant='secondary'
+								className='mt-8'>
+								Learn more
+							</Button>
+						</div>
+						<div className='rounded-3xl border border-sage/30 bg-sage/10 p-8 flex flex-col'>
+							<h3 className='text-2xl font-serif text-primary mb-4'>
+								Therapy for OCD &amp; Intrusive Thoughts
+							</h3>
+							<p className='text-secondary leading-relaxed flex-1'>
+								Work through evidence-based strategies, including ERP, to break
+								the cycle of intrusive thoughts and compulsions with care.
+							</p>
+							<Button
+								href='/services/ocd-intrusive-thoughts'
+								variant='secondary'
+								className='mt-8'>
+								Learn more
+							</Button>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* Client Testimonies Section */}
 			{/* <section className='bg-sage px-4 py-16'>
 				<div className='max-w-7xl mx-auto'>

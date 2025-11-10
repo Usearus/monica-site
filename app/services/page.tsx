@@ -15,35 +15,49 @@ export default function Services() {
 		<>
 			{/* New Hero Section */}
 			<section className='bg-beige px-4 py-8 lg:py-24'>
-				<div className='max-w-4xl mx-auto'>
-					<div className='text-center mb-8'>
-						<h1 className='text-4xl md:text-5xl lg:text-6xl font-serif text-primary mb-6 leading-tight'>
-							Therapy for Anxiety & Overthinking
-						</h1>
-						<p className='text-xl md:text-2xl text-secondary italic'>
-							For the women who can't turn their brain off.
-						</p>
-					</div>
-					<div className='space-y-6 text-lg text-secondary leading-relaxed'>
-						<p>
-							If your mind is always running, replaying conversations,
-							planning for the worst, or worrying about disappointing someone,
-							anxiety can feel like a full-time job.
-						</p>
-						<p className='font-medium'>And the hard part?</p>
-						<p>
-							Everyone sees you as capable, strong, dependable so it's easy to
-							hide how overwhelmed you really are.
-						</p>
-						<p>
-							Many of my clients are ambitious women, eldest daughters, or
-							first-generation professionals who carry a lot of
-							responsibility. You may be the one holding things together for
-							everyone else, but quietly falling apart on the inside.
-						</p>
-						<p className='font-medium text-primary text-xl'>
-							You don't have to push through it alone anymore.
-						</p>
+				<div className='max-w-7xl mx-auto'>
+					<div className='grid md:grid-cols-2 gap-12 items-center'>
+						<div className='space-y-8'>
+							<div className='space-y-4'>
+								<h1 className='text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-tight'>
+									Therapy for Anxiety &amp; Overthinking
+								</h1>
+								<p className='text-xl md:text-2xl text-secondary italic'>
+									For the women who can't turn their brain off.
+								</p>
+							</div>
+							<div className='space-y-6 text-lg text-secondary leading-relaxed'>
+								<p>
+									If your mind is always running, replaying conversations,
+									planning for the worst, or worrying about disappointing
+									someone, anxiety can feel like a full-time job.
+								</p>
+								<p className='font-medium'>And the hard part?</p>
+								<p>
+									Everyone sees you as capable, strong, dependable so it's easy
+									to hide how overwhelmed you really are.
+								</p>
+								<p>
+									Many of my clients are ambitious women, eldest daughters, or
+									first-generation professionals who carry a lot of
+									responsibility. You may be the one holding things together for
+									everyone else, but quietly falling apart on the inside.
+								</p>
+								<p className='font-medium text-primary text-xl'>
+									You don't have to push through it alone anymore.
+								</p>
+							</div>
+						</div>
+						<div className='relative rounded-lg overflow-hidden w-full max-w-md mx-auto md:ml-auto md:mx-0'>
+							<Image
+								src='/services-hero.jpg'
+								alt='Therapy space with calming decor'
+								width={600}
+								height={600}
+								className='w-full h-auto object-cover rounded-lg'
+								priority
+							/>
+						</div>
 					</div>
 				</div>
 			</section>
