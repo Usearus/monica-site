@@ -83,6 +83,14 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
+				<div className='mt-12 border-t border-beige/30 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-beige'>
+					<p>© 2025 Monica Denais. All rights reserved.</p>
+					<Link
+						href='/privacy-policy'
+						className='hover:text-sage transition-colors underline'>
+						Privacy Policy
+					</Link>
+				</div>
 			</div>
 		</footer>
 	);
