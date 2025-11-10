@@ -14,7 +14,7 @@ export default function FAQs() {
     },
     {
       question: "How much do therapy sessions cost?",
-      answer: "My standard rate is $140 per 50-minute session. Payment is due at the time of each session. If you're using an Employee Assistance Program (EAP), we'll discuss those options before starting therapy.",
+      answer: "My standard rate is $140 per 50-minute session. Payment is due at the time of each session. If you're using an Employee Assistance Program (EAP), we'll discuss those options before starting therapy. I also accept HSA and FSA cards as forms of payment.",
     },
     {
       question: "Do you take insurance?",
