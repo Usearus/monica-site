@@ -16,8 +16,11 @@ export default function About() {
 				<div className='max-w-7xl mx-auto'>
 					<div className='grid gap-12 md:grid-cols-2 items-center'>
 						<div className='space-y-6 text-lg text-secondary leading-relaxed'>
+							<p className='text-3xl md:text-4xl' aria-hidden='true'>
+								👋
+							</p>
 							<h1 className='text-5xl md:text-6xl font-serif text-primary mb-6'>
-								About Monica Denais
+								About Monica
 							</h1>
 							<p>
 								Hi, I'm Monica, a Licensed Professional Counselor, eldest
