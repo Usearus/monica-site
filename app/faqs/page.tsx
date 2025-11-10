@@ -18,7 +18,7 @@ export default function FAQs() {
     },
     {
       question: "Do you take insurance?",
-      answer: "I'm currently in-network with United Health Care. If you have a different insurance provider, I'm considered out-of-network. This means you'll pay out of pocket for sessions, but I can provide a superbill (an itemized receipt) that you can submit to your insurance for possible reimbursement. Please note: Reimbursement isn't guaranteed, and it's your responsibility to verify coverage with your plan. I'm not responsible for whether your insurance accepts or reimburses your claim.",
+      answer: "I'm considered out-of-network. This means you'll pay out of pocket for sessions, but I can provide a superbill (an itemized receipt) that you can submit to your insurance for possible reimbursement. Please note: Reimbursement isn't guaranteed, and it's your responsibility to verify coverage with your plan. I'm not responsible for whether your insurance accepts or reimburses your claim.",
     },
     {
       question: "How long are sessions and how often do we meet?",
