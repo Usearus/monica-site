@@ -70,7 +70,7 @@ export default function Home() {
 				<div className='max-w-7xl mx-auto'>
 					<div className='grid md:grid-cols-2 gap-12 items-center'>
 						{/* Left side - image */}
-						<div className='relative rounded-lg overflow-hidden'>
+						<div className='relative rounded-lg overflow-hidden w-full max-w-md mx-auto md:mx-0 md:mr-auto'>
 							<Image
 								src='/monica-about.jpg'
 								alt='Monica Denais, Licensed Professional Counselor'
