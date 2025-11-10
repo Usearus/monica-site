@@ -16,9 +16,9 @@ export default function Footer() {
 								<div>
 									<p className='font-medium mb-1'>Email</p>
 									<a
-										href='mailto:mdenais@monicadenais.com'
+										href='mailto:info@monicadenais.com'
 										className='text-beige hover:text-sage transition-colors underline'>
-										mdenais@monicadenais.com
+										info@monicadenais.com
 									</a>
 								</div>
 							</div>

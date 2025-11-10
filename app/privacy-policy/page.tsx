@@ -140,9 +140,9 @@ export default function PrivacyPolicy() {
 						<li>
 							<strong>Email:</strong>{' '}
 							<a
-								href='mailto:mdenais@monicadenais.com'
+								href='mailto:info@monicadenais.com'
 								className='text-primary underline hover:text-sage transition-colors'>
-								mdenais@monicadenais.com
+								info@monicadenais.com
 							</a>
 						</li>
 						<li>
