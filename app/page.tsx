@@ -300,7 +300,7 @@ export default function Home() {
 								href='/services'
 								variant='secondary'
 								className='mt-8 w-fit justify-start'>
-								Learn more
+								Break free from overthinking
 							</Button>
 						</div>
 						<div className='rounded-3xl border border-sage/30 bg-sage/10 p-8 flex flex-col'>
@@ -315,7 +315,7 @@ export default function Home() {
 								href='/services/burnout-perfectionism'
 								variant='secondary'
 								className='mt-8 w-fit justify-start'>
-								Learn more
+								Breakthrough burnout
 							</Button>
 						</div>
 						<div className='rounded-3xl border border-sage/30 bg-sage/10 p-8 flex flex-col'>
@@ -330,7 +330,7 @@ export default function Home() {
 								href='/services/ocd-intrusive-thoughts'
 								variant='secondary'
 								className='mt-8 w-fit justify-start'>
-								Learn more
+								Overcome intrusive thoughts
 							</Button>
 						</div>
 					</div>
