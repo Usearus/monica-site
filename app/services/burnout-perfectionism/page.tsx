@@ -1,7 +1,4 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '@/components/Footer';
-import Button from '@/components/Button';
 import SimplePracticeWidget from '@/components/SimplePracticeWidget';
 
 export const metadata = {
@@ -51,15 +48,17 @@ export default function BurnoutPerfectionism() {
 								</p>
 							</div>
 						</div>
-						<div className='relative rounded-lg overflow-hidden w-full max-w-md mx-auto md:ml-auto md:mx-0'>
-							<Image
-								src='/services-hero.jpg'
-								alt='Therapy space with calming decor'
-								width={600}
-								height={600}
-								className='w-full h-auto object-cover rounded-lg'
-								priority
-							/>
+						<div className='relative w-full max-w-2xl mx-auto md:ml-auto md:mx-0 rounded-lg overflow-hidden shadow-lg'>
+							<div className='relative w-full' style={{ paddingBottom: '56.25%' }}>
+								<iframe
+									className='absolute inset-0 h-full w-full border-none rounded-lg'
+									src='https://www.youtube.com/embed/o59Ial95XPs?si=Fs4k9Ma0fRjyUcgI'
+									title='Monica Denais on perfectionism and burnout'
+									allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+									referrerPolicy='strict-origin-when-cross-origin'
+									allowFullScreen
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
