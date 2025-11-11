@@ -20,6 +20,14 @@ One of the biggest shifts was learning how to communicate my needs not just with
 If you show up openly, Monica will meet you with patience, expertise, and real support. You’ll learn more about yourself than you ever thought possible.`,
 		author: 'M',
 	},
+	{
+		quote: `I reached out to Monica because I felt like I’d hit a wall. I was drawn to her as a woman of color who would understand my experiences. She’s incredibly kind, but she also asks the hard questions that help you grow.
+
+The biggest thing I learned was that a lot of the things I told myself weren’t actually true. Now I can analyze my thoughts before accepting them as facts about myself, other people, or situations. Monica supported me through some of my hardest seasons, and I don’t think I would’ve pushed through the same way without her.
+
+If you want to change, and you’re willing to be challenged but supported the entire time, take the leap and work with Monica.`,
+		author: 'S',
+	},
 ];
 
 export default function Testimonials() {
