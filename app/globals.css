@@ -8,6 +8,7 @@
   
   /* Color palette variables */
   --sage: #6f8c63;
+  --sage-light: #e3eddb;
   --bark: #5A5242;
   --olivewood: #2A2F25;
   --beige: #faf8f5;
@@ -26,6 +27,7 @@
   
   /* Color palette theme variables */
   --color-sage: var(--sage);
+  --color-sage-light: var(--sage-light);
   --color-bark: var(--bark);
   --color-olivewood: var(--olivewood);
   --color-beige: var(--beige);
