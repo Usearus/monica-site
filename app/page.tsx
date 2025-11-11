@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Footer from '@/components/Footer';
 import Button from '@/components/Button';
+import Footer from '@/components/Footer';
 import SimplePracticeWidget from '@/components/SimplePracticeWidget';
-import { QuoteIcon } from '@radix-ui/react-icons';
+import Testimonials from '@/components/Testimonials';
 
 export default function Home() {
 	return (
@@ -338,51 +338,26 @@ export default function Home() {
 			</section>
 
 
-			{/* Client Testimonies Section */}
-			{/* <section className='bg-sage px-4 py-16'>
-				<div className='max-w-7xl mx-auto'>
-					<h2 className='text-4xl md:text-5xl font-serif text-primary text-center mb-12'>
-						Client Testimonies
+			<Testimonials />
+
+			<section className='bg-sage/10 px-4 py-16 border-t border-sage/20 border-b'>
+				<div className='max-w-7xl mx-auto text-center'>
+					<h2 className='text-3xl md:text-4xl font-serif text-primary mb-6'>
+						Ready to take the next step? 👇
 					</h2>
-					<div className='grid md:grid-cols-3 gap-8'>
-						<div className='bg-white p-8 rounded-lg shadow-sm'>
-							<div className='mb-4'>
-								<div className='w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center'>
-									<QuoteIcon className='w-6 h-6 text-sage' />
-								</div>
-							</div>
-							<p className='text-lg text-secondary mb-4 italic leading-relaxed'>
-								"Testimony from Silvia - coming soon"
-							</p>
-							<p className='text-sm text-secondary font-medium'>- Silvia</p>
-						</div>
-
-						<div className='bg-white p-8 rounded-lg shadow-sm'>
-							<div className='mb-4'>
-								<div className='w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center'>
-									<QuoteIcon className='w-6 h-6 text-sage' />
-								</div>
-							</div>
-							<p className='text-lg text-secondary mb-4 italic leading-relaxed'>
-								"Testimony from Iz - coming soon"
-							</p>
-							<p className='text-sm text-secondary font-medium'>- Iz</p>
-						</div>
-
-						<div className='bg-white p-8 rounded-lg shadow-sm'>
-							<div className='mb-4'>
-								<div className='w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center'>
-									<QuoteIcon className='w-6 h-6 text-sage' />
-								</div>
-							</div>
-							<p className='text-lg text-secondary mb-4 italic leading-relaxed'>
-								"Testimony from Nyisha - coming soon"
-							</p>
-							<p className='text-sm text-secondary font-medium'>- Nyisha</p>
-						</div>
+					<div className='text-lg text-secondary leading-relaxed'>
+						<p className='text-secondary mt-4'>
+							<strong>Click below to schedule a free 15-minute consult.</strong>
+						</p>
+						<SimplePracticeWidget
+							buttonText='Book a free consult'
+							widgetType='OAR'
+							variant='secondary'
+							className='mt-6'
+						/>
 					</div>
 				</div>
-			</section> */}
+			</section>
 
 			{/* <SimplePracticeWidget
 				buttonText='Contact'
