@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: "Monica Denais - Licensed Counselor",
     template: "%s | Monica Denais"
   },
-  description: "Licensed counselor in Plano, TX helping ambitious women break free from perfectionism and embrace confidence. Solution-focused therapy for lasting change.",
+  description: "Licensed counselor in Dallas / Fort Worth, TX helping ambitious women break free from perfectionism and embrace confidence. Solution-focused therapy for lasting change.",
   keywords: ["therapy McKinney TX", "counselor McKinney Texas", "perfectionism therapy", "women's counseling", "solution-focused therapy", "confidence counseling", "mental health Plano", "North Texas counseling", "anxiety therapist McKinney", "anxiety counseling McKinney" ],
   authors: [{ name: "Monica Denais" }],
   creator: "Monica Denais",
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     url: "https://monicadenais.com",
     siteName: "Monica Denais Counseling",
     title: "Break Free From Perfectionism | Monica Denais",
-    description: "Licensed counselor in Plano, TX helping ambitious women break free from perfectionism and embrace confidence.",
+    description: "Licensed counselor in Dallas / Fort Worth, TX helping ambitious women break free from perfectionism and embrace confidence.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Monica Denais - Licensed Counselor",
-    description: "Help for ambitious women dealing with perfectionism. Solution-focused therapy in Plano, TX.",
+    description: "Help for ambitious women dealing with perfectionism. Solution-focused therapy in Dallas / Fort Worth, TX.",
   },
   robots: {
     index: true,
