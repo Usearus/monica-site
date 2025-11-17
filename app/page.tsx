@@ -21,8 +21,8 @@ export default function Home() {
 							<p className='text-lg text-primary leading-relaxed'>
 								{/* As a first-gen Latina and eldest daughter, I know what it feels like to hold everything together for everyone else. As a licensed 
               counselor, I help ambitious women break free from perfectionism and create a life they enjoy. */}
-								Online therapy for ambitious women, first gens, and eldest
-								daughters struggling with anxiety, intrusive thoughts, and
+								Online therapy for ambitious women, first gens and eldest
+								daughters struggling with anxiety, intrusive thoughts,
 								burnout, and family pressure. Using cognitive behavioral therapy
 								(CBT), acceptance and commitment therapy (ACT), and
 								solution-focused strategies.
