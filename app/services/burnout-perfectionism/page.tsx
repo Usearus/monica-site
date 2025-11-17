@@ -163,7 +163,7 @@ export default function BurnoutPerfectionism() {
 								</div>
 							</div>
 
-							<p className='mt-8 text-lg text-secondary leading-relaxed italic'>
+							<p className='mt-8 text-lg text-secondary leading-relaxed'>
 								Therapy isn't about lowering your standards or giving up on your
 								goals.
 							</p>

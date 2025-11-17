@@ -142,7 +142,7 @@ export default function Services() {
 								</div>
 							</div>
 
-							<p className='mt-8 text-lg text-secondary leading-relaxed italic'>
+							<p className='mt-8 text-lg text-secondary leading-relaxed'>
 								Therapy isn't about "just thinking positive."
 							</p>
 							<p className='text-lg text-secondary leading-relaxed'>

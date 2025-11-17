@@ -178,7 +178,7 @@ export default function OCDIntrusiveThoughts() {
 								</div>
 							</div>
 
-							<p className='mt-8 text-lg text-secondary leading-relaxed italic'>
+							<p className='mt-8 text-lg text-secondary leading-relaxed'>
 								Therapy isn't about making the thoughts go away completely.
 							</p>
 							<p className='text-lg text-secondary leading-relaxed'>
