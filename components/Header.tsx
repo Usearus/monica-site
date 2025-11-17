@@ -26,7 +26,7 @@ export default function Header() {
 		{ name: 'Blog', href: '/blog' },
 		{
 			name: 'Contact',
-			href: 'https://monica-denais.clientsecure.me/contact-widget',
+			href: 'https://forms.clickup.com/8683638/f/8903p-518/1N578Z3V48AIEL77AR',
 			external: true,
 		},
 	];
