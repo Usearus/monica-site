@@ -1,8 +1,7 @@
-import { defineConfig } from "eslint/config";
 import nextConfig from "eslint-config-next";
 
-const eslintConfig = defineConfig([
+const eslintConfig = [
   ...nextConfig,
-]);
+];
 
 export default eslintConfig;
