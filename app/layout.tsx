@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Monica Denais - Licensed Counselor",
+    default: "Monica Denais North Texas Counseling Services for Anxiety",
     template: "%s | Monica Denais"
   },
   description: "Licensed counselor in Dallas / Fort Worth, TX helping ambitious women break free from perfectionism and embrace confidence. Solution-focused therapy for lasting change.",
-  keywords: ["therapy McKinney TX", "counselor McKinney Texas", "perfectionism therapy", "women's counseling", "solution-focused therapy", "confidence counseling", "mental health Plano", "North Texas counseling", "anxiety therapist McKinney", "anxiety counseling McKinney" ],
+  keywords: ["therapy McKinney TX", "counselor McKinney Texas", "perfectionism therapy", "women's counseling", "solution-focused therapy", "confidence counseling", "mental health Plano", "North Texas counseling", "anxiety therapist McKinney", "anxiety counseling McKinney", "anxiety counseling Dallas", "anxiety counseling Fort Worth", "anxiety counseling Plano", "anxiety counseling McKinney", "anxiety counseling Dallas", "anxiety counseling Fort Worth", "anxiety counseling Plano", "North Texas anxiety counseling", "North Texas therapist", "North Texas counseling services", "North Texas counseling services for anxiety", "North Texas counseling services for perfectionism", "North Texas counseling services for confidence", "North Texas counseling services for women's counseling", "North Texas counseling services for solution-focused therapy", "North Texas counseling services for mental health", "North Texas counselor"],
   authors: [{ name: "Monica Denais" }],
   creator: "Monica Denais",
   alternates: {
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://monicadenais.com",
-    siteName: "Monica Denais Counseling",
+    siteName: "Monica Denais North Texas Counseling Services for Anxiety",
     title: "Break Free From Perfectionism | Monica Denais",
     description: "Licensed counselor in Dallas / Fort Worth, TX helping ambitious women break free from perfectionism and embrace confidence.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Monica Denais - Licensed Counselor",
+    title: "Monica Denais North Texas Counseling Services for Anxiety",
     description: "Help for ambitious women dealing with perfectionism. Solution-focused therapy in Dallas / Fort Worth, TX.",
   },
   robots: {
