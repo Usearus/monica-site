@@ -5,6 +5,9 @@ export const metadata = {
 	title: 'Burnout & Perfectionism Therapy | Monica Denais',
 	description:
 		'Specialized therapy for burnout and perfectionism. Help for high-achieving women who are exhausted from trying to be perfect.',
+	alternates: {
+		canonical: 'https://monicadenais.com/services/burnout-perfectionism',
+	},
 };
 
 export default function BurnoutPerfectionism() {

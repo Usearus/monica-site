@@ -8,6 +8,9 @@ export const metadata = {
 	title: 'Services | Monica Denais',
 	description:
 		'Explore our comprehensive mental health counselling services including individual, family, children, and teen therapy.',
+	alternates: {
+		canonical: 'https://monicadenais.com/services',
+	},
 };
 
 export default function Services() {

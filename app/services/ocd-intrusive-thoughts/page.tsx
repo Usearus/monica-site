@@ -8,6 +8,9 @@ export const metadata = {
 	title: 'OCD & Intrusive Thoughts Therapy | Monica Denais',
 	description:
 		'Specialized therapy for OCD and intrusive thoughts. Evidence-based treatment for obsessive-compulsive disorder and unwanted thoughts.',
+	alternates: {
+		canonical: 'https://monicadenais.com/services/ocd-intrusive-thoughts',
+	},
 };
 
 export default function OCDIntrusiveThoughts() {

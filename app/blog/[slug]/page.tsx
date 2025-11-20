@@ -78,6 +78,9 @@ export async function generateMetadata({
 	return {
 		title: `${post.title} | Monica Denais`,
 		description: post.excerpt,
+		alternates: {
+			canonical: `https://monicadenais.com/blog/${slug}`,
+		},
 	};
 }
 

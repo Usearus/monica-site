@@ -7,6 +7,9 @@ export const metadata = {
 	title: 'About | Monica Denais',
 	description:
 		'Licensed counselor helping ambitious women break free from perfectionism and embrace confidence. Solution-focused therapy for lasting change.',
+	alternates: {
+		canonical: 'https://monicadenais.com/about',
+	},
 };
 
 export default function About() {

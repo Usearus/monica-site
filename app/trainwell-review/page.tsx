@@ -8,6 +8,9 @@ export const metadata: Metadata = {
 		'Is Trainwell Worth It? My 2-Year Experience with Virtual Personal Training | Monica Denais',
 	description:
 		'After 2 years and 256 workouts with Trainwell, here is an honest look at the pros, cons, pricing, and who this virtual personal training app is best for.',
+	alternates: {
+		canonical: 'https://monicadenais.com/trainwell-review',
+	},
 };
 
 export default function TrainwellReviewPage() {

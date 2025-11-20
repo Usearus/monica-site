@@ -1,5 +1,14 @@
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "FAQs | Monica Denais",
+  description: "Frequently asked questions about therapy services, scheduling, and what to expect.",
+  alternates: {
+    canonical: "https://monicadenais.com/faqs",
+  },
+};
 
 export default function FAQs() {
   return (

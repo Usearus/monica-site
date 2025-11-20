@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   keywords: ["therapy McKinney TX", "counselor McKinney Texas", "perfectionism therapy", "women's counseling", "solution-focused therapy", "confidence counseling", "mental health Plano", "North Texas counseling", "anxiety therapist McKinney", "anxiety counseling McKinney" ],
   authors: [{ name: "Monica Denais" }],
   creator: "Monica Denais",
+  alternates: {
+    canonical: "https://monicadenais.com",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

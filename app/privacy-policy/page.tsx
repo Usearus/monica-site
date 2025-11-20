@@ -4,6 +4,9 @@ export const metadata = {
 	title: 'Privacy Policy | Monica Denais',
 	description:
 		'Learn how Monica Denais Counseling collects, uses, and protects your personal information and health data.',
+	alternates: {
+		canonical: 'https://monicadenais.com/privacy-policy',
+	},
 };
 
 export default function PrivacyPolicy() {

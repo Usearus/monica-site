@@ -4,6 +4,9 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Blog | Monica Denais",
   description: "Read our latest articles and insights on mental health and counselling.",
+  alternates: {
+    canonical: "https://monicadenais.com/blog",
+  },
 };
 
 export default function Blog() {
