@@ -133,7 +133,7 @@ export default function Home() {
 							rel='noopener noreferrer'
 							className='h-20 w-full max-w-[200px] flex items-center justify-center p-4 transition-opacity hover:opacity-80'>
 							<Image
-								src='/Womens-Health-Logo.png'
+								src='/brands/Womens-Health-Logo.png'
 								alt="Women's Health logo"
 								width={200}
 								height={80}
@@ -146,7 +146,7 @@ export default function Home() {
 							rel='noopener noreferrer'
 							className='h-20 w-full max-w-[200px] flex items-center justify-center p-4 transition-opacity hover:opacity-80'>
 							<Image
-								src='/loftie-logo_2000x.webp'
+								src='/brands/loftie-logo_2000x.webp'
 								alt='Loftie logo'
 								width={200}
 								height={80}
@@ -159,7 +159,7 @@ export default function Home() {
 							rel='noopener noreferrer'
 							className='h-20 w-full max-w-[200px] flex items-center justify-center p-4 transition-opacity hover:opacity-80'>
 							<Image
-								src='/Insider-Logo-2021.png'
+								src='/brands/Insider-Logo-2021.png'
 								alt='Insider logo'
 								width={200}
 								height={80}
@@ -172,7 +172,7 @@ export default function Home() {
 							rel='noopener noreferrer'
 							className='h-20 w-full max-w-[200px] flex items-center justify-center p-4 transition-opacity hover:opacity-80'>
 							<Image
-								src='/website_yahoolife.webp'
+								src='/brands/website_yahoolife.webp'
 								alt='Yahoo Life logo'
 								width={200}
 								height={80}
@@ -185,7 +185,7 @@ export default function Home() {
 							rel='noopener noreferrer'
 							className='h-20 w-full max-w-[200px] flex items-center justify-center p-4 transition-opacity hover:opacity-80 col-span-2 md:col-span-1 justify-self-center'>
 							<Image
-								src='/Medium-Wordmark-Black.png'
+								src='/brands/Medium-Wordmark-Black.png'
 								alt='Medium logo'
 								width={200}
 								height={80}
@@ -261,7 +261,7 @@ export default function Home() {
 						{/* Right side - image */}
 						<div className='hidden md:block relative rounded-lg overflow-hidden'>
 							<Image
-								src='/services-1.JPG'
+								src='/services-2.JPG'
 								alt='Monica Denais, Licensed Professional Counselor'
 								width={600}
 								height={600}

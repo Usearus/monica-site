@@ -50,6 +50,11 @@ export default function BurnoutPerfectionism() {
 									You don't have to push through it alone anymore.
 								</p>
 							</div>
+							<SimplePracticeWidget
+								buttonText='Book a free consult'
+								widgetType='OAR'
+								variant='secondary'
+							/>
 						</div>
 						<div className='relative w-full max-w-2xl mx-auto md:ml-auto md:mx-0 rounded-lg overflow-hidden shadow-lg'>
 							<div className='relative w-full' style={{ paddingBottom: '56.25%' }}>

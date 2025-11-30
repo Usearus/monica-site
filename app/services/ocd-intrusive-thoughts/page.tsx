@@ -52,10 +52,15 @@ export default function OCDIntrusiveThoughts() {
 									You don't have to manage this alone anymore.
 								</p>
 							</div>
+							<SimplePracticeWidget
+								buttonText='Book a free consult'
+								widgetType='OAR'
+								variant='secondary'
+							/>
 						</div>
-						<div className='relative rounded-lg overflow-hidden w-full max-w-md mx-auto md:ml-auto md:mx-0'>
+						<div className='relative rounded-lg overflow-hidden'>
 							<Image
-								src='/services-hero.jpg'
+								src='/monica-denais-counseling-north-texas2.jpg'
 								alt='Therapy space with calming decor'
 								width={600}
 								height={600}

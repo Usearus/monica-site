@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Footer from '@/components/Footer';
@@ -108,6 +109,17 @@ export default async function BlogPost({
 					</Link>
 
 					<article className='bg-white p-8 md:p-12 rounded-lg shadow-sm border border-olivewood/10'>
+						{slug === 'eldest-daughter-syndrome' && (
+							<div className='mb-6 rounded-lg overflow-hidden'>
+								<Image
+									src='/monica-denais-counseling-north-texas1.jpg'
+									alt='Therapy space'
+									width={800}
+									height={600}
+									className='w-full h-auto object-cover rounded-lg'
+								/>
+							</div>
+						)}
 						<p className='text-sm text-sage mb-4'>{post.date}</p>
 						<h1 className='text-4xl md:text-5xl font-serif text-primary mb-6'>
 							{post.title}
