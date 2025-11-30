@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function Blog() {
       date: "January 15, 2025",
       excerpt:
         "Understanding the unique pressures faced by first-born daughters and how to break free from perfectionism and people-pleasing tendencies.",
+      image: "/monica-denais-counseling-north-texas1.jpg",
     },
   ];
 
@@ -29,9 +31,24 @@ export default function Blog() {
             {posts.map((post, index) => (
               <Link key={index} href={`/blog/${post.slug}`} className="block mb-4 last:mb-0">
                 <article className="bg-white p-8 rounded-lg shadow-sm border border-olivewood/10 hover:shadow-md transition-shadow cursor-pointer">
-                  <p className="text-sm text-sage mb-2">{post.date}</p>
-                  <h2 className="text-3xl font-serif text-primary mb-4">{post.title}</h2>
-                  <p className="text-lg text-primary leading-relaxed">{post.excerpt}</p>
+                  <div className="grid md:grid-cols-[300px_1fr] gap-6 items-center">
+                    {post.image && (
+                      <div className="relative rounded-lg overflow-hidden w-full aspect-[4/3]">
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          width={300}
+                          height={225}
+                          className="w-full h-full object-cover rounded-lg"
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <p className="text-sm text-sage mb-2">{post.date}</p>
+                      <h2 className="text-3xl font-serif text-primary mb-4">{post.title}</h2>
+                      <p className="text-lg text-primary leading-relaxed">{post.excerpt}</p>
+                    </div>
+                  </div>
                 </article>
               </Link>
             ))}
