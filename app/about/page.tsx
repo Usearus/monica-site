@@ -106,6 +106,15 @@ export default function About() {
 						clothes on your couch. Therapy should fit your life, not make it
 						harder. I'm currently licensed in <strong>Texas.</strong>
 					</p>
+					<div className='mt-8 rounded-lg overflow-hidden'>
+						<Image
+							src='/services-2.JPG'
+							alt='Virtual therapy session'
+							width={800}
+							height={600}
+							className='w-full h-auto object-cover rounded-lg'
+						/>
+					</div>
 					<h2 className='text-3xl font-serif text-primary pt-6'>
 						Why This Work Matters to Me
 					</h2>

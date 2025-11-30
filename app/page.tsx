@@ -31,7 +31,7 @@ export default function Home() {
 								*Sessions available in English and Spanish
 							</p>
 							<div className='flex flex-wrap gap-4 mt-8'>
-								<Button href='#services-overview' variant='secondary'>
+								<Button href='#services-overview' variant='secondary-outline'>
 									View services
 								</Button>
 								{/* <Button
@@ -44,7 +44,7 @@ export default function Home() {
 								<SimplePracticeWidget
 									buttonText='Book free consult'
 									widgetType='OAR'
-									variant='primary'
+									variant='secondary'
 									className='hidden md:inline-block'
 								/>
 							</div>
@@ -261,7 +261,7 @@ export default function Home() {
 						{/* Right side - image */}
 						<div className='hidden md:block relative rounded-lg overflow-hidden'>
 							<Image
-								src='/services-2.JPG'
+								src='/monica-denais-counseling-north-texas3.jpg'
 								alt='Monica Denais, Licensed Professional Counselor'
 								width={600}
 								height={600}
