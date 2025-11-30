@@ -17,7 +17,7 @@ export default function BurnoutPerfectionism() {
 			<section className='bg-beige px-4 py-8 lg:py-24'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='grid md:grid-cols-2 gap-12 items-center'>
-						<div className='space-y-8'>
+						<div className='space-y-8 order-2 md:order-1'>
 							<div className='space-y-4'>
 								<h1 className='text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-tight'>
 									Therapy for Burnout &amp; Perfectionism
@@ -56,7 +56,7 @@ export default function BurnoutPerfectionism() {
 								variant='secondary'
 							/>
 						</div>
-						<div className='relative w-full max-w-2xl mx-auto md:ml-auto md:mx-0 rounded-lg overflow-hidden shadow-lg'>
+						<div className='relative w-full max-w-2xl mx-auto md:ml-auto md:mx-0 rounded-lg overflow-hidden shadow-lg order-1 md:order-2'>
 							<div className='relative w-full' style={{ paddingBottom: '56.25%' }}>
 								<iframe
 									className='absolute inset-0 h-full w-full border-none rounded-lg'
