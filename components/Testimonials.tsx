@@ -65,7 +65,7 @@ export default function Testimonials() {
 	};
 
 	return (
-		<section className='bg-sage-light px-4 py-16'>
+		<section className='bg-sage-light px-4 py-12 lg:py-32'>
 			<div className='max-w-7xl mx-auto'>
 				<h2 className='text-4xl md:text-5xl font-serif text-primary text-center mb-12'>
 					Client Testimonials

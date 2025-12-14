@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<div className='w-full'>
 			{/* Hero Section */}
-			<section className='bg-beige px-4 py-8 lg:py-24'>
+			<section className='bg-beige px-4 py-12 lg:py-32'>
 				<div className='max-w-7xl mx-auto w-full'>
 					<div className='grid md:grid-cols-2 gap-12 items-center'>
 						{/* Left content */}
@@ -66,7 +66,7 @@ export default function Home() {
 			</section>
 
 			{/* Meet Monica Section */}
-			<section className='bg-white px-4 py-16'>
+			<section className='bg-white px-4  py-12 lg:py-32'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='grid md:grid-cols-2 gap-12 items-center'>
 						{/* Left side - image */}
@@ -116,7 +116,7 @@ export default function Home() {
 
 
 			{/* Featured On Section */}
-			<section className='bg-white px-4 py-16'>
+			<section className='bg-white px-4 pb-32'>
 				<div className='max-w-7xl mx-auto text-center space-y-10'>
 					<div className='space-y-4'>
 						<p className='uppercase tracking-[0.3em] text-sm text-secondary'>
@@ -197,7 +197,7 @@ export default function Home() {
 			</section>
 			
 			{/* What We Specialize In Section */}
-			<section className='bg-beige px-4 py-8 lg:py-24 scroll-mt-32 md:scroll-mt-20'>
+			<section className='bg-beige px-4 py-12 lg:py-32 scroll-mt-32 md:scroll-mt-20'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='grid md:grid-cols-2 gap-12 items-center'>
 						{/* Left side - content */}
@@ -275,7 +275,7 @@ export default function Home() {
 			{/* Services Overview Section */}
 			<section
 				id='services-overview'
-				className='bg-white px-4 py-16 scroll-mt-32 md:scroll-mt-24'>
+				className='bg-white px-4 py-12 lg:py-32 scroll-mt-32 md:scroll-mt-24'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='text-center mb-12 space-y-4'>
 						<h2 className='text-4xl md:text-5xl font-serif text-primary'>
@@ -339,8 +339,7 @@ export default function Home() {
 
 
 			<Testimonials />
-
-			<section className='bg-sage/10 px-4 py-16 border-t border-sage/20 border-b'>
+			<section className='bg-sage/10 px-4 py-12 lg:py-32 border-t border-sage/20 border-b'>
 				<div className='max-w-7xl mx-auto text-center'>
 					<h2 className='text-3xl md:text-4xl font-serif text-primary mb-6'>
 						Ready to take the next step? 👇
