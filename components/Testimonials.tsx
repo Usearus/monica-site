@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
 	ChevronLeftIcon,
 	ChevronRightIcon,
@@ -9,35 +9,48 @@ import {
 
 const testimonials = [
 	{
-		quote: `I’ve been out of therapy for years and I still use the tools Monica taught me. When I first started, I thought therapy was just talking about stress and having someone listen. But with Monica, I realized she was quietly giving me strategies, reframes, and real skills I could actually use in my life.
+		header: "I've been out of therapy for years and I still use the tools Monica taught me.",
+		quote: `When I first started, I thought therapy was just talking about stress and having someone listen. But with Monica, I realized she was quietly giving me strategies, reframes, and real skills I could actually use in my life.
 
-Her approach is warm, supportive, and human. After every session, I left feeling lighter, more capable, and like I could actually live fully and authentically. I became less anxious, more open, and more confident. Therapy with her was truly pivotal. I used to feel overwhelmed going into a grocery store or getting on a plane, and now I’ve moved to my favorite city, spent nine months abroad, and even got an ESA pup.
+Her approach is warm, supportive, and human. After every session, I left feeling lighter, more capable, and like I could actually live fully and authentically. I became less anxious, more open, and more confident. Therapy with her was truly pivotal. I used to feel overwhelmed going into a grocery store or getting on a plane, and now I've moved to my favorite city, spent nine months abroad, and even got an ESA pup.
 
-I wanted a therapist who understood modern life, my culture, and didn’t need everything explained. Monica is for the girlies. She just gets it. The tools she gives you don’t disappear after therapy ends they stay with you for years.`,
+I wanted a therapist who understood modern life, my culture, and didn't need everything explained. Monica is for the girlies. She just gets it. The tools she gives you don't disappear after therapy ends they stay with you for years.`,
 		author: 'A (Previous Client)',
 	},
 	{
+		header: 'I became confident asking for help and stopped feeling like I had to carry everything alone.',
 		quote: `I came to Monica struggling with anxiety tied to Autism-related symptoms. What stood out immediately was her knowledge, her energy, and how genuinely she shows up. With her, I learned that my uniqueness has strengths, and that needing accommodations is valid.
 
 One of the biggest shifts was learning how to communicate my needs not just with her, but with my family and even my employer. I became confident asking for help and stopped feeling like I had to carry everything alone.
 
-If you show up openly, Monica will meet you with patience, expertise, and real support. You’ll learn more about yourself than you ever thought possible.`,
+If you show up openly, Monica will meet you with patience, expertise, and real support. You'll learn more about yourself than you ever thought possible.`,
 		author: 'M (Previous Client)',
 	},
 	{
-		quote: `I reached out to Monica because I felt like I’d hit a wall. I was drawn to her as a woman of color who would understand my experiences. She’s incredibly kind, but she also asks the hard questions that help you grow.
+		header: "I reached out to Monica because I felt like I'd hit a wall.",
+		quote: `I was drawn to her as a woman of color who would understand my experiences. She's incredibly kind, but she also asks the hard questions that help you grow.
 
-The biggest thing I learned was that a lot of the things I told myself weren’t actually true. Now I can analyze my thoughts before accepting them as facts about myself, other people, or situations. Monica supported me through some of my hardest seasons, and I don’t think I would’ve pushed through the same way without her.
+The biggest thing I learned was that a lot of the things I told myself weren't actually true. Now I can analyze my thoughts before accepting them as facts about myself, other people, or situations. Monica supported me through some of my hardest seasons, and I don't think I would've pushed through the same way without her.
 
-If you want to change, and you’re willing to be challenged but supported the entire time, take the leap and work with Monica.`,
+If you want to change, and you're willing to be challenged but supported the entire time, take the leap and work with Monica.`,
 		author: 'S (Previous Client)',
 	},
 ];
 
 export default function Testimonials() {
 	const [activeIndex, setActiveIndex] = useState(0);
+	const [isExpanded, setIsExpanded] = useState(false);
 
 	const showTestimonial = testimonials[activeIndex];
+
+	// Reset expanded state when testimonial changes
+	useEffect(() => {
+		setIsExpanded(false);
+	}, [activeIndex]);
+	const shouldTruncate = showTestimonial.quote.length > 250;
+	const displayQuote = shouldTruncate && !isExpanded
+		? showTestimonial.quote.substring(0, 250).trim() + '...'
+		: showTestimonial.quote;
 
 	const handlePrevious = () => {
 		setActiveIndex((prev) =>
@@ -68,18 +81,31 @@ export default function Testimonials() {
 							<ChevronLeftIcon className='h-6 w-6 transition-colors duration-200 group-hover:text-primary-inverse' />
 						</button>
 
-						<div className='bg-white p-8 md:p-12 rounded-3xl shadow-sm'>
-							<QuoteIcon
-								className='w-12 h-12 text-sage mb-6'
-								aria-hidden='true'
-							/>
-							<p className='text-base md:text-lg text-secondary italic leading-relaxed whitespace-pre-line'>
-								{showTestimonial.quote}
-							</p>
-							<p className='text-base text-secondary font-medium mt-6'>
-								- {showTestimonial.author}
+					<div className='bg-white p-8 md:p-12 rounded-3xl shadow-sm'>
+						<QuoteIcon
+							className='w-12 h-12 text-sage mb-6'
+							aria-hidden='true'
+						/>
+						<h3 className='text-2xl md:text-4xl font-serif text-primary mb-4'>
+							{showTestimonial.header}
+						</h3>
+						<div className='text-base md:text-lg text-secondary leading-relaxed'>
+							<p className='whitespace-pre-line'>
+								{displayQuote}
+								{shouldTruncate && !isExpanded && (
+									<button
+										type='button'
+										onClick={() => setIsExpanded(!isExpanded)}
+										className='text-sage hover:text-olivewood font-medium ml-1 transition-colors underline inline'>
+										Show more
+									</button>
+								)}
 							</p>
 						</div>
+						<p className='text-base text-secondary font-medium mt-6'>
+							- {showTestimonial.author}
+						</p>
+					</div>
 
 						<button
 							type='button'
