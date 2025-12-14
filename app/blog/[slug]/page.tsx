@@ -10,14 +10,13 @@ import SimplePracticeWidget from '@/components/SimplePracticeWidget';
 // Blog posts data
 const posts = {
 	'eldest-daughter-syndrome': {
-		title: 'Eldest Daughter Syndrome',
+		title: 'What is Eldest Daughter Syndrome?',
 		date: 'January 15, 2025',
 		excerpt:
 			'Understanding the unique pressures faced by first-born daughters and how to break free from perfectionism and people-pleasing tendencies.',
 		content: `
       <p>If you're a first-born daughter or eldest daughter, you might recognize this pattern: you've always felt responsible for everyone else's well-being, pushed yourself to perfection, and found it nearly impossible to say no when asked for help (even when you desperately need to rest). This is often called "Eldest Daughter Syndrome," and understanding it is the first step toward reclaiming your life.</p>
 
-      <h2>What is Eldest Daughter Syndrome?</h2>
       <p>Eldest Daughter Syndrome refers to the unique set of pressures and expectations placed on first-born daughters. From an early age, many eldest daughters are unconsciously assigned the role of family mediator, caretaker, and emotional support system. They're often praised for being "responsible," "mature," and "helpful"—labels that, while positive, can create a pattern of over-giving that becomes difficult to break.</p>
 
       <h2>Common Characteristics</h2>

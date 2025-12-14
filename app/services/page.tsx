@@ -37,7 +37,7 @@ export default function Services() {
 								</p>
 								<p className='font-medium'>And the hard part?</p>
 								<p>
-									Everyone sees you as capable, strong, dependable so it's easy
+									Everyone sees you as capable, strong, and dependable so it's easy
 									to hide how overwhelmed you really are.
 								</p>
 								<p>
