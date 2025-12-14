@@ -60,7 +60,7 @@ export default function Footer() {
 								<p>
 									<strong>Thursday</strong>
 								</p>
-								<p>8:00am - 3:00pm</p>
+								<p>8:00am - 7:00pm</p>
 							</div>
 							<div className='grid grid-cols-2 gap-4'>
 								<p>
