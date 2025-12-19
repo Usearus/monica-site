@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
+import MentayaWidget from './MentayaWidget';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -10,30 +11,37 @@ export default function FAQ() {
     {
       question: "What kind of issues do you help with?",
       answer: "I specialize in supporting ambitious women, eldest daughters, and first-gens through a variety of challenges. My areas of focus include perfectionism, anxiety, OCD, burnout, self-doubt, and family issues. I use CBT (Cognitive Behavioral Therapy) and solution-focused therapy approaches to help you work through the pressure, expectations, and burnout that come with holding everything together. Whether you're dealing with the unique pressures of being the first in your family to navigate certain spaces, the weight of being the eldest daughter, or the constant drive to be perfect, I'm here to help you break free from these patterns and create a life that feels authentic to you.",
+      hasWidget: false,
     },
     {
       question: "How much do therapy sessions cost?",
       answer: "My standard rate is $140 per 50-minute session. Payment is due at the time of each session. If you're using an Employee Assistance Program (EAP), we'll discuss those options before starting therapy. I also accept HSA and FSA cards as forms of payment.",
+      hasWidget: false,
     },
     {
       question: "Do you take insurance?",
-      answer: "I'm considered out-of-network. This means you'll pay out of pocket for sessions, but I can provide a superbill (an itemized receipt) that you can submit to your insurance for possible reimbursement. Please note: Reimbursement isn't guaranteed, and it's your responsibility to verify coverage with your plan. I'm not responsible for whether your insurance accepts or reimburses your claim.",
+      answer: "I'm considered out-of-network. This means you'll pay out of pocket for sessions, but I can provide a superbill (an itemized receipt) that you can submit to your insurance for possible reimbursement. Please note: Reimbursement isn't guaranteed, and it's your responsibility to verify coverage with your plan. I'm not responsible for whether your insurance accepts or reimburses your claim. Additionally, I have partnered with Mentaya to help clients use their out-of-network benefits to save money on therapy. Use this tool below to see if you qualify for reimbursement for my services.",
+      hasWidget: true,
     },
     {
       question: "How long are sessions and how often do we meet?",
       answer: "Each session lasts about 50 minutes. Most clients begin with weekly sessions to build consistency, then transition to biweekly or monthly as progress continues. I'll share my professional recommendation after our first session based on your goals, and we can adjust the frequency to fit your needs and budget.",
+      hasWidget: false,
     },
     {
       question: "What if I need to cancel or reschedule?",
       answer: "Please cancel or reschedule at least 24 hours in advance using your SimplePractice client portal. Cancellations made less than 24 hours in advance, or missed appointments, will be charged the full session fee, since that time is reserved just for you.",
+      hasWidget: false,
     },
     {
       question: "Do you offer virtual sessions?",
       answer: "Yes! All sessions are held virtually through a secure, HIPAA-compliant platform. You can join from the comfort of your home or any private space within Texas.",
+      hasWidget: false,
     },
     {
       question: "What can I expect in the first session?",
       answer: "Your first session is all about getting to know you — we'll talk about what brings you to therapy, your goals, and what you hope to get out of our work together. It's also a chance for you to see if I'm the right fit for you. You don't need to prepare anything — just come as you are.",
+      hasWidget: false,
     },
   ];
 
@@ -59,11 +67,16 @@ export default function FAQ() {
             </button>
             <div
               className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                openIndex === index ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'
+                openIndex === index ? 'max-h-[1200px] opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
               <div className="px-6 pb-6">
                 <p className="text-lg text-secondary leading-relaxed whitespace-pre-line">{faq.answer}</p>
+                {faq.hasWidget && (
+                  <div className="mt-6">
+                    <MentayaWidget />
+                  </div>
+                )}
               </div>
             </div>
           </div>
