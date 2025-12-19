@@ -13,6 +13,14 @@ export const metadata = {
 export default function Blog() {
   const posts = [
     {
+      slug: "out-of-network-therapy-reimbursement-superbill",
+      title: "Out-of-Network Therapy Reimbursement: How to Submit a Superbill and Get Money Back",
+      date: "January 20, 2025",
+      excerpt:
+        "Learn how to submit a superbill and get reimbursed for out-of-network therapy sessions step-by-step.",
+      image: "/insurance-reimbursement.jpg",
+    },
+    {
       slug: "eldest-daughter-syndrome",
       title: "What is Eldest Daughter Syndrome?",
       date: "January 15, 2025",

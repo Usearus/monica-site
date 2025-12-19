@@ -53,6 +53,107 @@ const posts = {
       <p>Therapy can provide a safe space to explore these patterns, understand where they come from, and develop new ways of being that honor both your values and your needs. Together, we can work toward solutions that bring lasting change.</p>
     `,
 	},
+	'out-of-network-therapy-reimbursement-superbill': {
+		title: 'Out-of-Network Therapy Reimbursement: How to Submit a Superbill and Get Money Back',
+		date: 'January 20, 2025',
+		excerpt:
+			'Learn how to submit a superbill and get reimbursed for out-of-network therapy sessions. This step-by-step guide helps you understand your insurance benefits and navigate the reimbursement process.',
+		content: `
+      <p>Finding a therapist you genuinely connect with is one of the most important parts of starting therapy. But what happens when the therapist you want to see is out-of-network with your insurance?</p>
+
+      <p>Most people assume this means nothing will be covered — but that's not true.</p>
+
+      <p>Many insurance plans, especially PPO plans, do reimburse for out-of-network therapy. You simply need to understand how your benefits work, what a superbill is, and how to submit it correctly.</p>
+
+      <p>This guide breaks everything down step-by-step so you can confidently use your insurance benefits while still choosing the therapist who feels right for you.</p>
+
+      <h2>What Does "Out-of-Network" Mean?</h2>
+      <p>An out-of-network therapist is a provider who does not have a contracted rate with your insurance company.</p>
+
+      <p>But that does not mean your therapy isn't covered.</p>
+
+      <p>Depending on your plan, you may be eligible for:</p>
+      <ul>
+        <li>Partial reimbursement</li>
+        <li>Reimbursement after meeting your out-of-network deductible</li>
+        <li>Higher reimbursement rates with PPO plans</li>
+        <li>Coverage for virtual therapy sessions</li>
+      </ul>
+
+      <p>Many clients are surprised by how much they can receive back each month once claims are submitted correctly.</p>
+
+      <h2>Step 1: Check Your Out-of-Network Benefits</h2>
+      <p>Call the number on the back of your insurance card and ask these exact questions:</p>
+      <ol>
+        <li>Do I have out-of-network mental health benefits?</li>
+        <li>What is my out-of-network deductible, and how much is remaining?</li>
+        <li>What percentage do you reimburse once the deductible is met?</li>
+        <li>Do you cover CPT codes 90837 or 90834?</li>
+        <li>Do you accept a standard superbill for claims?</li>
+        <li>How do I submit my superbill (portal, email, or mail)?</li>
+      </ol>
+
+      <p>These answers will help you calculate what your out-of-pocket cost could be after reimbursement.</p>
+
+      <h2>Step 2: What Is a Superbill?</h2>
+      <p>A superbill is a detailed receipt that includes everything your insurance needs to process a claim. It typically includes:</p>
+      <ul>
+        <li>Your provider's credentials (license, NPI, etc.)</li>
+        <li>Dates of service</li>
+        <li>CPT codes</li>
+        <li>Diagnosis code (required by insurance)</li>
+        <li>Session fees</li>
+      </ul>
+
+      <p>Most private practice therapists (including myself) provide superbills monthly or upon request.</p>
+
+      <h2>Step 3: How to Submit a Superbill</h2>
+      <p>Once you have your superbill, you can submit it:</p>
+      <ul>
+        <li>Through your insurance member portal</li>
+        <li>Via email (depending on your plan)</li>
+        <li>Through the mail</li>
+        <li>Or through a reimbursement service like <a href="https://www.mentaya.com/" target="_blank" rel="noopener noreferrer">Mentaya</a></li>
+      </ul>
+
+      <p>After submission, reimbursement typically takes 2–6 weeks.</p>
+
+      <h2>Step 4: Make Reimbursement Easier With Mentaya</h2>
+      <p>If the insurance process feels overwhelming or time-consuming, <a href="https://www.mentaya.com/" target="_blank" rel="noopener noreferrer">Mentaya</a> can make everything easier.</p>
+
+      <p>Mentaya:</p>
+      <ul>
+        <li>Submits superbills for you</li>
+        <li>Tracks reimbursement progress</li>
+        <li>Estimates how much you'll get back</li>
+        <li>Resubmits denied claims</li>
+        <li>Keeps everything organized in one dashboard</li>
+      </ul>
+
+      <p>It takes the administrative burden off your plate and ensures you get the reimbursement you're entitled to without the stress.</p>
+
+      <h2>A Quick Note for North Texas Clients</h2>
+      <p>If you live anywhere in North Texas, reimbursement can be especially helpful. Many clients in this region face long commutes, busy schedules, or limited availability within in-network provider lists. Choosing an out-of-network therapist allows you to prioritize a therapeutic fit, flexible scheduling, and specialized care while still using your insurance benefits to reduce the cost. Reimbursement makes high-quality therapy far more accessible for North Texas residents.</p>
+
+      <h2>Is Out-of-Network Therapy Worth It?</h2>
+      <p>For many people — yes.</p>
+
+      <p>Once reimbursement begins, out-of-network therapy can feel much more affordable. You may benefit financially if:</p>
+      <ul>
+        <li>You have a PPO plan</li>
+        <li>You've met or are close to meeting your deductible</li>
+        <li>You submit superbills consistently</li>
+        <li>You use a tool like <a href="https://www.mentaya.com/" target="_blank" rel="noopener noreferrer">Mentaya</a> to streamline claims</li>
+      </ul>
+
+      <p>Many clients discover that out-of-network therapy becomes a sustainable and supportive option once benefits start applying.</p>
+
+      <h2>Ready to Begin Therapy?</h2>
+      <p>If you're looking for a supportive, grounding space designed for ambitious women navigating stress, transitions, and overwhelm, I'd love to support you.</p>
+
+      <p>✨ Book a consultation or appointment here:</p>
+    `,
+	},
 };
 
 export async function generateStaticParams() {
@@ -113,6 +214,17 @@ export default async function BlogPost({
 								<Image
 									src='/monica-denais-counseling-north-texas1.jpg'
 									alt='Therapy space'
+									width={800}
+									height={600}
+									className='w-full h-auto object-cover rounded-lg'
+								/>
+							</div>
+						)}
+						{slug === 'out-of-network-therapy-reimbursement-superbill' && (
+							<div className='mb-6 rounded-lg overflow-hidden'>
+								<Image
+									src='/insurance-reimbursement.jpg'
+									alt='Insurance reimbursement for therapy'
 									width={800}
 									height={600}
 									className='w-full h-auto object-cover rounded-lg'
