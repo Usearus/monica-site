@@ -150,8 +150,6 @@ const posts = {
 
       <h2>Ready to Begin Therapy?</h2>
       <p>If you're looking for a supportive, grounding space designed for ambitious women navigating stress, transitions, and overwhelm, I'd love to support you.</p>
-
-      <p>✨ Book a consultation or appointment here:</p>
     `,
 	},
 };
