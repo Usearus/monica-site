@@ -69,13 +69,16 @@ export default function Header() {
 			{/* Top info bar */}
 			<div className='bg-olivewood text-primary-inverse py-3 px-4'>
 				<div className='max-w-7xl mx-auto flex flex-row justify-between items-center text-sm gap-2'>
-					<p className='text-balance'>
-						Now accepting{' '}
-						<Link
-							href='/faqs#insurance'
-							className='underline hover:text-sage transition-colors'>
-							insurance
-						</Link>
+					<p className='text-balance flex items-center gap-2'>
+						<span>👉</span>
+						<span>
+							Now accepting{' '}
+							<Link
+								href='/faqs#insurance'
+								className='underline hover:text-sage transition-colors'>
+								insurance
+							</Link>
+						</span>
 					</p>
 					<div className='flex items-center gap-1 shrink-0'>
 						<LocationIcon className='w-4 h-4' />
