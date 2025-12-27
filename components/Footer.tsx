@@ -26,7 +26,7 @@ export default function Footer() {
 								<LocationIcon className='w-5 h-5 text-beige mt-1 shrink-0' />
 								<div>
 									<p className='font-medium mb-1'>Location</p>
-									<p>Telehealth services in Texas (Pending Florida)</p>
+									<p>Telehealth services in Texas & Florida</p>
 								</div>
 							</div>
 						</div>

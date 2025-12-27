@@ -104,7 +104,7 @@ export default function About() {
 						All sessions are virtual, so you can show up from wherever you
 						feel safest whether its at home, your car, or even in comfy
 						clothes on your couch. Therapy should fit your life, not make it
-						harder. I'm currently licensed in <strong>Texas.</strong>
+						harder. I'm currently licensed in <strong>Texas & Florida.</strong>
 					</p>
 					<div className='mt-8 rounded-lg overflow-hidden'>
 						<Image
@@ -142,7 +142,7 @@ export default function About() {
 					</p>
 					<p>
 						And if we meet virtually, there's a good chance my schnauzer,{' '}
-						<strong>Wilson</strong>, will peek into the frame to say hello.
+						Wilson, will peek into the frame to say hello.
 					</p>
 					<p>
 						If you're ready to stop carrying everything alone and want support

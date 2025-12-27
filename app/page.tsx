@@ -14,8 +14,8 @@ export default function Home() {
 					<div className='grid md:grid-cols-2 gap-12 items-center'>
 						{/* Left content */}
 						<div className='space-y-6'>
-							<h1 className='text-3xl md:text-6xl font-serif text-primary leading-tight'>
-								Therapy for anxiety, perfectionism, and overthinking in Texas
+							<h1 className='text-3xl md:text-5xl font-serif text-primary leading-tight'>
+								Therapy for anxiety, perfectionism, and burnout in Texas & Florida
 								{/* Break Free From Perfectionism & Embrace Confidence */}
 							</h1>
 							<p className='text-lg text-primary leading-relaxed'>
@@ -27,7 +27,7 @@ export default function Home() {
 								(CBT), acceptance and commitment therapy (ACT), and
 								solution-focused strategies.
 							</p>
-							<p className='text-base text-secondary mt-2'>
+							<p className='text-lg text-primary mt-2'>
 								*Sessions available in English and Spanish
 							</p>
 							<div className='flex flex-wrap gap-4 mt-8'>
@@ -65,6 +65,66 @@ export default function Home() {
 				</div>
 			</section>
 
+			{/* Insurances Accepted Section */}
+			<section className='bg-sage-light px-4 py-12'>
+				<div className='max-w-7xl mx-auto text-center space-y-10'>
+					<div className='space-y-4'>
+						<p className='uppercase tracking-[0.3em] text-sm text-secondary'>
+							Insurances Accepted
+						</p>
+					</div>
+					<div className='flex flex-wrap justify-center items-center gap-8 md:gap-12'>
+						{/* Insurance 1 */}
+						<div className='h-20 w-full max-w-[200px] flex items-center justify-center p-4'>
+							<Image
+								src='/insurances/United-Healthcare-Logo.png'
+								alt='United Healthcare'
+								width={200}
+								height={80}
+								className='w-full h-auto object-contain grayscale'
+							/>
+						</div>
+						{/* Placeholder slots for future insurances - hidden for now */}
+						{/* <div className='h-20 w-full max-w-[200px] flex items-center justify-center p-4'>
+							<Image
+								src='/insurances/insurance-2.png'
+								alt='Insurance 2'
+								width={200}
+								height={80}
+								className='w-full h-auto object-contain'
+							/>
+						</div>
+						<div className='h-20 w-full max-w-[200px] flex items-center justify-center p-4'>
+							<Image
+								src='/insurances/insurance-3.png'
+								alt='Insurance 3'
+								width={200}
+								height={80}
+								className='w-full h-auto object-contain'
+							/>
+						</div>
+						<div className='h-20 w-full max-w-[200px] flex items-center justify-center p-4'>
+							<Image
+								src='/insurances/insurance-4.png'
+								alt='Insurance 4'
+								width={200}
+								height={80}
+								className='w-full h-auto object-contain'
+							/>
+						</div>
+						<div className='h-20 w-full max-w-[200px] flex items-center justify-center p-4'>
+							<Image
+								src='/insurances/insurance-5.png'
+								alt='Insurance 5'
+								width={200}
+								height={80}
+								className='w-full h-auto object-contain'
+							/>
+						</div> */}
+					</div>
+				</div>
+			</section>
+
 			{/* Meet Monica Section */}
 			<section className='bg-white px-4  py-12 lg:py-32'>
 				<div className='max-w-7xl mx-auto'>
@@ -94,7 +154,7 @@ export default function Home() {
 								For the past six years, I've specialized in supporting ambitious
 								women, eldest daughters, and first-gens through anxiety,
 								perfectionism, burnout, and self-doubt all through virtual
-								therapy in Texas.
+								therapy.
 							</p>
 							<p className='text-lg text-secondary leading-relaxed'>
 								My approach is grounded in evidence-based training and real
