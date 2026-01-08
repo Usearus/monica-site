@@ -71,7 +71,7 @@ export default function FAQ() {
     },
     {
       question: "Do you take insurance?",
-      answer: "I am in-network with UnitedHealthcare for clients located in Texas. At this time, insurance is accepted only for Texas residents.",
+      answer: "I am in-network with UnitedHealthcare and Aetna for clients located in Texas. At this time, insurance is accepted only for Texas residents.",
       hasWidget: false,
     },
     {

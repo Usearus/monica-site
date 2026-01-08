@@ -74,7 +74,17 @@ export default function Home() {
 						</p>
 					</div>
 					<div className='flex flex-wrap justify-center items-center gap-8 md:gap-12'>
-						{/* Insurance 1 */}
+						{/* Aetna */}
+						<div className='h-20 w-full max-w-[200px] flex items-center justify-center p-4'>
+							<Image
+								src='/insurances/Aetna_logo..png'
+								alt='Aetna'
+								width={200}
+								height={80}
+								className='w-full h-auto object-contain grayscale'
+							/>
+						</div>
+						{/* United Healthcare */}
 						<div className='h-20 w-full max-w-[200px] flex items-center justify-center p-4'>
 							<Image
 								src='/insurances/United-Healthcare-Logo.png'
