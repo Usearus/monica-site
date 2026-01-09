@@ -50,16 +50,18 @@ export default function Home() {
 							</div>
 						</div>
 
-						{/* Right side - image */}
-						<div className='hidden md:block relative rounded-lg overflow-hidden'>
-							<Image
-								src='/homepage-hero-2.jpg'
-								alt='Three women laughing together'
-								width={600}
-								height={600}
-								className='w-full h-auto object-cover rounded-lg'
-								priority
-							/>
+						{/* Right side - video */}
+						<div className='relative w-full rounded-lg overflow-hidden shadow-lg'>
+							<div className='relative w-full' style={{ paddingBottom: '56.25%' }}>
+								<iframe
+									className='absolute inset-0 h-full w-full border-none rounded-lg'
+									src='https://www.youtube.com/embed/MxqmraCnA9w'
+									title='Monica Denais therapy introduction'
+									allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+									referrerPolicy='strict-origin-when-cross-origin'
+									allowFullScreen
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
