@@ -14,6 +14,8 @@ const posts = {
 		date: 'January 15, 2025',
 		excerpt:
 			'Understanding the unique pressures faced by first-born daughters and how to break free from perfectionism and people-pleasing tendencies.',
+		coverType: 'video' as const,
+		coverVideo: 'https://www.youtube.com/embed/7GnesLnP7dE',
 		content: `
       <p>If you're a first-born daughter or eldest daughter, you might recognize this pattern: you've always felt responsible for everyone else's well-being, pushed yourself to perfection, and found it nearly impossible to say no when asked for help (even when you desperately need to rest). This is often called "Eldest Daughter Syndrome," and understanding it is the first step toward reclaiming your life.</p>
 
@@ -58,6 +60,8 @@ const posts = {
 		date: 'January 20, 2025',
 		excerpt:
 			'Learn how to submit a superbill and get reimbursed for out-of-network therapy sessions. This step-by-step guide helps you understand your insurance benefits and navigate the reimbursement process.',
+		coverType: 'image' as const,
+		coverImage: '/insurance-reimbursement.jpg',
 		content: `
       <p>Finding a therapist you genuinely connect with is one of the most important parts of starting therapy. But what happens when the therapist you want to see is out-of-network with your insurance?</p>
 
@@ -207,24 +211,26 @@ export default async function BlogPost({
 					</Link>
 
 					<article className='bg-white p-8 md:p-12 rounded-lg shadow-sm border border-olivewood/10'>
-						{slug === 'eldest-daughter-syndrome' && (
-							<div className='mb-6 rounded-lg overflow-hidden'>
-								<Image
-									src='/monica-denais-counseling-north-texas1.jpg'
-									alt='Therapy space'
-									width={800}
-									height={600}
-									className='w-full h-auto object-cover rounded-lg'
+						{post.coverType === 'video' && post.coverVideo && (
+							<div className='relative w-full aspect-video mb-6 rounded-lg overflow-hidden border border-olivewood/20 shadow-sm'>
+								<iframe
+									className='absolute inset-0 h-full w-full'
+									src={post.coverVideo}
+									title={post.title}
+									loading='lazy'
+									allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+									referrerPolicy='strict-origin-when-cross-origin'
+									allowFullScreen
 								/>
 							</div>
 						)}
-						{slug === 'out-of-network-therapy-reimbursement-superbill' && (
+						{post.coverType === 'image' && post.coverImage && (
 							<div className='mb-6 rounded-lg overflow-hidden'>
 								<Image
-									src='/insurance-reimbursement.jpg'
-									alt='Insurance reimbursement for therapy'
+									src={post.coverImage}
+									alt={post.title}
 									width={800}
-									height={600}
+									height={450}
 									className='w-full h-auto object-cover rounded-lg'
 								/>
 							</div>

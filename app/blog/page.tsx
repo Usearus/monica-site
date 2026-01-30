@@ -26,7 +26,7 @@ export default function Blog() {
       date: "January 15, 2025",
       excerpt:
         "Understanding the unique pressures faced by first-born daughters and how to break free from perfectionism and people-pleasing tendencies.",
-      image: "/monica-denais-counseling-north-texas1.jpg",
+      image: "/blog/COVER_Eldest-daughter-syndrome.png",
     },
   ];
 
@@ -41,12 +41,12 @@ export default function Blog() {
                 <article className="bg-white p-8 rounded-lg shadow-sm border border-olivewood/10 hover:shadow-md transition-shadow cursor-pointer">
                   <div className="grid md:grid-cols-[300px_1fr] gap-6 items-center">
                     {post.image && (
-                      <div className="relative rounded-lg overflow-hidden w-full aspect-4/3">
+                      <div className="relative rounded-lg overflow-hidden w-full aspect-video">
                         <Image
                           src={post.image}
                           alt={post.title}
                           width={300}
-                          height={225}
+                          height={169}
                           className="w-full h-full object-cover rounded-lg"
                         />
                       </div>
