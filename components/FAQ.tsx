@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, ReactNode } from 'react';
+import Link from 'next/link';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import MentayaWidget from './MentayaWidget';
 
@@ -99,6 +100,14 @@ export default function FAQ() {
       answer: "Your first session is all about getting to know you. We'll talk about what brings you to therapy, your goals, and what you hope to get out of our work together. It's also a chance for you to see if I'm the right fit for you. You don't need to prepare anything, just come as you are.",
       hasWidget: false,
     },
+    {
+      question: "Are you a provider looking to refer a patient?",
+      answer: "If you are a healthcare provider and would like to refer a patient for therapy services, please visit our Provider Referrals page for referral options, clinical focus areas, insurance information, and how to coordinate care.",
+      hasWidget: false,
+      isLink: true,
+      linkUrl: "/referral",
+      linkText: "View Provider Referrals",
+    },
   ];
 
   const toggleAccordion = (index: number) => {
@@ -160,6 +169,15 @@ export default function FAQ() {
                 <div className="text-lg text-secondary leading-relaxed">
                   {parseAnswer(faq.answer)}
                 </div>
+                {faq.isLink && faq.linkUrl && faq.linkText && (
+                  <div className="mt-6">
+                    <Link
+                      href={faq.linkUrl}
+                      className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full font-medium bg-sage hover:bg-[#7a9570] text-white transition-colors">
+                      {faq.linkText}
+                    </Link>
+                  </div>
+                )}
                 {faq.hasWidget && (
                   <div className="mt-6">
                     <MentayaWidget />
