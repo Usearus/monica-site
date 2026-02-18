@@ -15,7 +15,7 @@ export default function ReferralPage() {
 	return (
 		<>
 			{/* Hero - Professional, provider-focused */}
-			<section className='bg-beige px-4 py-8 lg:py-20 border-b border-bark/10'>
+			<section className='bg-beige px-4 py-12 lg:py-20 border-b border-bark/10'>
 				<div className='max-w-4xl mx-auto'>
 					<p className='text-sage font-medium uppercase tracking-wider text-sm mb-4'>
 						For Healthcare Providers
@@ -23,7 +23,7 @@ export default function ReferralPage() {
 					<h1 className='text-4xl md:text-5xl lg:text-6xl font-serif text-primary leading-tight mb-6'>
 						Provider Referrals
 					</h1>
-					<p className='text-xl text-secondary leading-relaxed max-w-3xl'>
+					<p className='text-lg text-secondary leading-relaxed max-w-3xl'>
 						Thank you for your interest in referring patients for therapy
 						services. Monica Denais provides telehealth psychotherapy for
 						adults across Texas and Florida, with a clinical focus on women
@@ -38,9 +38,9 @@ export default function ReferralPage() {
 			</section>
 
 			{/* How to Refer a Patient */}
-			<section className='bg-sage-light px-4 py-24'>
+			<section className='bg-sage-light px-4 py-8 md:py-24'>
 				<div className='max-w-7xl mx-auto'>
-					<h2 className='text-5xl font-serif text-primary mb-2 text-center'>
+					<h2 className='text-3xl md:text-5xl font-serif text-primary mb-2 text-center'>
 						How to Refer a Patient
 					</h2>
 					<p className='text-lg text-secondary leading-relaxed mb-10 text-center'>
@@ -111,12 +111,12 @@ export default function ReferralPage() {
 			</section>
 
 			{/* Who I Work With */}
-			<section className='bg-white px-4 py-16'>
+			<section className='bg-white px-4 py-8 md:py-16'>
 				<div className='max-w-4xl mx-auto'>
 					<h2 className='text-3xl font-serif text-primary mb-6 mt-16'>
 						Who I Work With
 					</h2>
-					<p className='text-lg text-secondary leading-relaxed mb-6'>
+					<p className='text-lg text-secondary leading-relaxed mb-2'>
 						<strong className='text-primary'>Adults (18+)</strong> experiencing:
 					</p>
 					<ul className='list-disc list-inside space-y-2 text-lg text-secondary leading-relaxed ml-4 mb-8'>
@@ -139,7 +139,7 @@ export default function ReferralPage() {
 			</section>
 
 			{/* Treatment Approach */}
-			<section className='bg-white px-4 py-16'>
+			<section className='bg-white px-4 py-8 md:py-16'>
 				<div className='max-w-4xl mx-auto'>
 					<h2 className='text-3xl font-serif text-primary mb-6'>
 						Treatment Approach
@@ -147,7 +147,7 @@ export default function ReferralPage() {
 					<p className='text-lg text-secondary leading-relaxed mb-6'>
 						Evidence-based, practical, and skills-focused psychotherapy.
 					</p>
-					<p className='text-lg text-secondary leading-relaxed mb-4 font-medium text-primary'>
+					<p className='text-lg text-secondary leading-relaxed mb-4 font-medium'>
 						Modalities include:
 					</p>
 					<ul className='list-disc list-inside space-y-2 text-lg text-secondary leading-relaxed ml-4 mb-4'>
@@ -163,24 +163,24 @@ export default function ReferralPage() {
 			</section>
 
 			{/* Insurance & Payment */}
-			<section className='bg-white px-4 py-16'>
+			<section className='bg-white px-4 py-8 md:py-16'>
 				<div className='max-w-4xl mx-auto'>
 					<h2 className='text-3xl font-serif text-primary mb-6'>
 						Insurance & Payment
 					</h2>
-					<p className='text-lg text-secondary leading-relaxed mb-4 font-medium text-primary'>
+					<p className='text-lg text-secondary leading-relaxed mb-4 font-medium'>
 						In-network with:
 					</p>
 					<ul className='list-disc list-inside space-y-1 text-lg text-secondary leading-relaxed ml-4 mb-6'>
 						<li>UnitedHealthcare</li>
 						<li>Aetna</li>
 					</ul>
-					<p className='text-lg text-secondary leading-relaxed mb-2'>
+					<p className='text-lg text-secondary leading-relaxed mb-2 font-medium'>
 						Out-of-network:
 					</p>
-					<p className='text-lg text-secondary leading-relaxed'>
-						Superbills available for reimbursement
-					</p>
+					<ul className='list-disc list-inside space-y-1 text-lg text-secondary leading-relaxed ml-4 mb-6'>
+						<li>Superbills available for reimbursement</li>
+					</ul>
 					<p className='text-sm text-secondary/80 mt-4 italic'>
 						*In-network status may change; please contact provider for most
 						current in-network status.
@@ -189,7 +189,7 @@ export default function ReferralPage() {
 			</section>
 
 			{/* Coordination of Care */}
-			<section className='bg-white px-4 py-16'>
+			<section className='bg-white px-4 py-8 md:py-16'>
 				<div className='max-w-4xl mx-auto'>
 					<h2 className='text-3xl font-serif text-primary mb-6'>
 						Coordination of Care
