@@ -172,8 +172,9 @@ export default function ReferralPage() {
 						In-network with:
 					</p>
 					<ul className='list-disc list-inside space-y-1 text-lg text-secondary leading-relaxed ml-4 mb-6'>
-						<li>UnitedHealthcare</li>
+						<li>Blue Cross Blue Shield of Texas</li>
 						<li>Aetna</li>
+						<li>UnitedHealthcare</li>
 					</ul>
 					<p className='text-lg text-secondary leading-relaxed mb-2 font-medium'>
 						Out-of-network:

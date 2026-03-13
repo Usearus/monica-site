@@ -3,7 +3,6 @@
 import { useState, useEffect, ReactNode } from 'react';
 import Link from 'next/link';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
-import MentayaWidget from './MentayaWidget';
 
 // Helper function to parse HTML tags in strings and convert to JSX
 const parseAnswer = (answer: string | ReactNode): ReactNode => {
@@ -63,47 +62,38 @@ export default function FAQ() {
     {
       question: "What kind of issues do you help with?",
       answer: "I specialize in supporting ambitious women, eldest daughters, and first-gens through a variety of challenges. My areas of focus include perfectionism, anxiety, OCD, burnout, self-doubt, and family issues. I use CBT (Cognitive Behavioral Therapy) and solution-focused therapy approaches to help you work through the pressure, expectations, and burnout that come with holding everything together. Whether you're dealing with the unique pressures of being the first in your family to navigate certain spaces, the weight of being the eldest daughter, or the constant drive to be perfect, I'm here to help you break free from these patterns and create a life that feels authentic to you.",
-      hasWidget: false,
     },
     {
       question: "How much do therapy sessions cost?",
       answer: "My standard rate is $140 per 50-minute session. Payment is due at the time of each session. If you're using an Employee Assistance Program (EAP), we'll discuss those options before starting therapy. I also accept HSA and FSA cards as forms of payment.",
-      hasWidget: false,
     },
     {
       question: "Do you take insurance?",
-      answer: "I am in-network with UnitedHealthcare and Aetna for clients located in Texas. At this time, insurance is accepted only for Texas residents.",
-      hasWidget: false,
+      answer: "I am in-network with Blue Cross Blue Shield of Texas, UnitedHealthcare, and Aetna for clients located in Texas. At this time, insurance is accepted only for Texas residents.",
     },
     {
       question: "What if my insurance isn't listed?",
-      answer: "If you have a different insurance plan or if you’re located outside of Texas, and I do not accept your insurance, I’m considered out-of-network. This means you’ll pay out of pocket for sessions, but I can provide a superbill (an itemized receipt) that you can submit to your insurance for possible reimbursement.\n\nPlease note: reimbursement is not guaranteed, and it’s your responsibility to verify your out-of-network benefits with your insurance plan. I’m not responsible for whether your insurance accepts or reimburses your claim.\n\nAdditionally, I have partnered with Mentaya to help clients use their out-of-network benefits and potentially save money on therapy. You can use the tool below to check whether you may qualify for reimbursement for my services.",
-      hasWidget: true,
+      answer: "If you have a different insurance plan or if you’re located outside of Texas, and I do not accept your insurance, I’m considered out-of-network. This means you’ll pay out of pocket for sessions, but I can provide a superbill (an itemized receipt) that you can submit to your insurance for possible reimbursement.\n\nPlease note: reimbursement is not guaranteed, and it’s your responsibility to verify your out-of-network benefits with your insurance plan. I’m not responsible for whether your insurance accepts or reimburses your claim.",
     },
     {
       question: "How long are sessions and how often do we meet?",
       answer: "Each session lasts about 50 minutes. Most clients begin with weekly sessions to build consistency, then transition to biweekly or monthly as progress continues. I'll share my professional recommendation after our first session based on your goals, and we can adjust the frequency to fit your needs and budget.",
-      hasWidget: false,
     },
     {
       question: "What if I need to cancel or reschedule?",
       answer: "Please cancel or reschedule at least 24 hours in advance using your SimplePractice client portal. Cancellations made less than 24 hours in advance, or missed appointments, will be charged the full session fee, since that time is reserved just for you.",
-      hasWidget: false,
     },
     {
       question: "Do you offer virtual sessions?",
       answer: "Yes! All sessions are held virtually through a secure, HIPAA-compliant platform. You can join from the comfort of your home or any private space within Texas or Florida.",
-      hasWidget: false,
     },
     {
       question: "What can I expect in the first session?",
       answer: "Your first session is all about getting to know you. We'll talk about what brings you to therapy, your goals, and what you hope to get out of our work together. It's also a chance for you to see if I'm the right fit for you. You don't need to prepare anything, just come as you are.",
-      hasWidget: false,
     },
     {
       question: "Are you a provider looking to refer a patient?",
       answer: "If you are a healthcare provider and would like to refer a patient for therapy services, please visit our Provider Referrals page for referral options, clinical focus areas, insurance information, and how to coordinate care.",
-      hasWidget: false,
       isLink: true,
       linkUrl: "/referral",
       linkText: "View Provider Referrals",
@@ -176,11 +166,6 @@ export default function FAQ() {
                       className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full font-medium bg-sage hover:bg-[#7a9570] text-white transition-colors">
                       {faq.linkText}
                     </Link>
-                  </div>
-                )}
-                {faq.hasWidget && (
-                  <div className="mt-6">
-                    <MentayaWidget />
                   </div>
                 )}
               </div>

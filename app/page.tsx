@@ -83,7 +83,17 @@ export default function Home() {
 								alt='Aetna'
 								width={200}
 								height={80}
-								className='w-full h-auto object-contain grayscale'
+								className='w-full h-auto object-contain'
+							/>
+						</div>
+						{/* Blue Cross Blue Shield of Texas */}
+						<div className='h-20 w-full max-w-[340px] flex items-center justify-center p-4'>
+							<Image
+								src='/brands/BCBS-texas-logo.png'
+								alt='Blue Cross and Blue Shield of Texas'
+								width={340}
+								height={80}
+								className='w-full h-auto object-contain'
 							/>
 						</div>
 						{/* United Healthcare */}
@@ -93,7 +103,7 @@ export default function Home() {
 								alt='United Healthcare'
 								width={200}
 								height={80}
-								className='w-full h-auto object-contain grayscale'
+								className='w-full h-auto object-contain'
 							/>
 						</div>
 						{/* Placeholder slots for future insurances - hidden for now */}
