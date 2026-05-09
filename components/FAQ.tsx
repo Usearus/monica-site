@@ -69,7 +69,17 @@ export default function FAQ() {
     },
     {
       question: "Do you take insurance?",
-      answer: "I am in-network with Blue Cross Blue Shield of Texas, UnitedHealthcare, and Aetna for clients located in Texas. At this time, insurance is accepted only for Texas residents.",
+      answer: "I am in network with the following:",
+      bullets: [
+        {
+          label: "For Texas residents",
+          text: "Blue Cross Blue Shield of Texas, UnitedHealthcare, and Aetna",
+        },
+        {
+          label: "For Florida residents",
+          text: "UnitedHealthcare",
+        },
+      ],
     },
     {
       question: "What if my insurance isn't listed?",
@@ -86,6 +96,10 @@ export default function FAQ() {
     {
       question: "Do you offer virtual sessions?",
       answer: "Yes! All sessions are held virtually through a secure, HIPAA-compliant platform. You can join from the comfort of your home or any private space within Texas or Florida.",
+      alert: {
+        title: "Important",
+        body: "Clients must be physically located in a state where Monica Denais is licensed at the time of their appointment. Telehealth is available in TX and FL. Please confirm your location at the time of scheduling.",
+      },
     },
     {
       question: "What can I expect in the first session?",
@@ -161,13 +175,35 @@ export default function FAQ() {
             </button>
             <div
               className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                openIndex === index ? 'max-h-[1200px] opacity-100' : 'max-h-0 opacity-0'
+                openIndex === index ? 'max-h-[2400px] opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
               <div className="pb-4 pt-0">
                 <div className="text-sm md:text-[15px] text-secondary leading-relaxed">
                   {parseAnswer(faq.answer)}
+                  {'bullets' in faq && faq.bullets && faq.bullets.length > 0 && (
+                    <ul className="mt-3 list-disc list-inside space-y-2 pl-0.5">
+                      {faq.bullets.map((item, i) => (
+                        <li key={i}>
+                          <strong className="text-primary">{item.label}</strong>:{" "}
+                          {item.text}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
+                {'alert' in faq && faq.alert && (
+                  <div
+                    role="note"
+                    aria-label={faq.alert.title}
+                    className="mt-5 rounded-lg border border-sage/35 border-l-[6px] border-l-sage bg-sage/10 px-4 py-3 text-sm md:text-[15px] text-secondary leading-relaxed"
+                  >
+                    <p className="text-primary">
+                      <strong>{faq.alert.title}</strong>
+                    </p>
+                    <p className="mt-2">{faq.alert.body}</p>
+                  </div>
+                )}
                 {faq.isLink && faq.linkUrl && faq.linkText && (
                   <div className="mt-5">
                     <Link
