@@ -136,18 +136,27 @@ export default function FAQ() {
 
   return (
     <>
-      <div className="space-y-4">
+      <div className="border-t border-bark/20">
         {faqs.map((faq, index) => (
-          <div key={index} id={`faq-${index}`} className="bg-white rounded-lg shadow-sm border border-bark/10 overflow-hidden transition-all duration-200 scroll-mt-32">
+          <div
+            key={index}
+            id={`faq-${index}`}
+            className="border-b border-bark/20 scroll-mt-32"
+          >
             <button
+              type="button"
               onClick={() => toggleAccordion(index)}
-              className="w-full p-6 text-left flex items-center justify-between hover:bg-beige transition-colors"
+              className="group w-full py-4 text-left flex items-start justify-between gap-4 bg-transparent cursor-pointer transition-colors duration-200"
+              aria-expanded={openIndex === index}
             >
-              <h2 className="text-xl md:text-2xl font-serif text-primary pr-8">{faq.question}</h2>
+              <h2 className="text-base md:text-lg font-serif font-normal text-secondary group-hover:text-sage leading-snug pr-2 transition-colors duration-200">
+                {faq.question}
+              </h2>
               <ChevronDownIcon
-                className={`w-6 h-6 text-secondary shrink-0 transition-transform duration-200 ${
+                className={`w-6 h-6 shrink-0 mt-0.5 text-secondary group-hover:text-sage transition-colors duration-200 transition-transform ${
                   openIndex === index ? 'rotate-180' : ''
                 }`}
+                aria-hidden
               />
             </button>
             <div
@@ -155,15 +164,15 @@ export default function FAQ() {
                 openIndex === index ? 'max-h-[1200px] opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
-              <div className="px-6 pb-6">
-                <div className="text-lg text-secondary leading-relaxed">
+              <div className="pb-4 pt-0">
+                <div className="text-sm md:text-[15px] text-secondary leading-relaxed">
                   {parseAnswer(faq.answer)}
                 </div>
                 {faq.isLink && faq.linkUrl && faq.linkText && (
-                  <div className="mt-6">
+                  <div className="mt-5">
                     <Link
                       href={faq.linkUrl}
-                      className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full font-medium bg-sage hover:bg-[#7a9570] text-white transition-colors">
+                      className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full text-sm font-medium bg-sage hover:bg-[#7a9570] text-white transition-colors">
                       {faq.linkText}
                     </Link>
                   </div>
