@@ -83,7 +83,11 @@ export default function FAQ() {
     },
     {
       question: "What if my insurance isn't listed?",
-      answer: "If you have a different insurance plan or if you’re located outside of Texas, and I do not accept your insurance, I’m considered out-of-network. This means you’ll pay out of pocket for sessions, but I can provide a superbill (an itemized receipt) that you can submit to your insurance for possible reimbursement.\n\nPlease note: reimbursement is not guaranteed, and it’s your responsibility to verify your out-of-network benefits with your insurance plan. I’m not responsible for whether your insurance accepts or reimburses your claim.",
+      answer: "If you have a different insurance plan or if you’re located outside of Texas, and I do not accept your insurance, I’m considered out-of-network. This means you’ll pay out of pocket for sessions, but I can provide a superbill (an itemized receipt) that you can submit to your insurance for possible reimbursement.",
+      alert: {
+        title: "Please note",
+        body: "Reimbursement is not guaranteed, and it’s your responsibility to verify your out-of-network benefits with your insurance plan. I’m not responsible for whether your insurance accepts or reimburses your claim.",
+      },
     },
     {
       question: "How long are sessions and how often do we meet?",
